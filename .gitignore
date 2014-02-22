@@ -31,3 +31,5 @@
 *.xdy
 *.tdo
 .settings/
+/bin
+/main.pdf
