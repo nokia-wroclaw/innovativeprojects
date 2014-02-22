@@ -36,7 +36,8 @@ participants are aware of the risk of revealing themselves).
 {Database system that will be able to store and index any popular form of
 documents like mails, microsoft office formats, pdfs.}
 {
-Web application with simple human interface based on google’s search engine and RESTful API for feeding the database.
+Web application with simple human interface based on google's search engine and
+RESTful API for feeding the database.
 Application should provide full-text search for the stored documents which can be based on Elasticsearch database.
 Possible extensions:
 \begin{itemize}
@@ -62,8 +63,9 @@ Useful links
 { 
 Graphs can have some fixed form and limited number of elements to recognise, i.e. 
 they can consist of arrows and boxes filled with text. They can be converted to any text format.
- For structured data you can define some abstract structure like: “text and number in circle on the right 
- hand side” and application should try to match those with the photo.
+ For structured data you can define some abstract structure like: 'text and
+ number in circle on the right hand side' and application should try to match
+ those with the photo.
 }
 {-}
 {Mateusz Jaworski}
@@ -87,18 +89,17 @@ Those peripheral devices could have a form of RGB lamps, signal lights (same as 
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Aplikacja wspierajaca spotkania}
-{Stworzenie aplikacji na Adroida lub Windows Phone ułatwiającą przekazywanie
-materiałów pomiędzy uczestnikami spotkania.} 
+{Mobile application facilitating meeting data exchange}
+{Application for Android or Windows Phone which facilitates sharing photos,
+videos and other files between meeting participants.} 
 {
-Host, tworzący spotkanie, powinien udostępnić kod OCR, do zeskanowania przez
-pozostałych uczestników. Po przetworzeniu kodu, użytkonik dołącza do pozostałych 
-w “wirtualnym spotkaniu”, skomunikowany poprzez połączenie internetowe lub Bluetooth. 
-Gdy którykolwiek z uczestników zrobi zdjęcie, bądź nakręci film używając swojego telefonu, 
-powinno być ono natychmiastowo rozesłane do pozostałych uczestników. Host powinien umożliwiać 
-tworzenie raportu ze spotkania, jako listy uczestników, ich czasu na spotkaniu i 
-listy przekazanych plików. Proponowany dalszy rozwój: host na komputerze PC, 
-przekazywanie obrazu wyświetlanego na smartphonie do innych urządzeń. }
+Project can be implemented in many various ways. Host of the meeting can
+provide an OCR code, bluetooth or wifi connection to other participants. Once
+the devices are connected into virtual network and some participant takes a
+photo or record a video the file is automatically transfered to other devices.
+Host can create a report from the meeting containing the files, list of
+participants, date and time, etc. Possible extensions: hosting meeting on PC,
+sharing mobile screen between other devices.}
 {Windows Phone/Android}
 {Mateusz Jaworski}
 {1 semester}
@@ -132,7 +133,7 @@ Knowledge-Based Expert System (KBES) is an artificial intelligence branch used f
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Logs parser Eclipse plugin}
+{Eclipse plugin - Logs parser}
 {
 Implement Eclipse plugin that parses project source code for logs printings.
 After loading of log file plugin is capable to jump into source code to point
@@ -168,12 +169,12 @@ on Cucumber) for JS-heavy (AJAX) web applications.}
 Example:\newline\newline
 \verb|OPEN http://www.nsn.com\newline 
 
-TYPE ‘hello’ INTO .login-input\newline
-TYPE ‘pasword’ INTO .pass-input\newline
+TYPE 'hello' INTO .login-input\newline
+TYPE 'pasword' INTO .pass-input\newline
 CLICK input[type=submit]\newline
 
 ASSERT SUCCESS\newline
-ASSERT .status CONTAINS ‘welcome’\newline 
+ASSERT .status CONTAINS 'welcome'\newline 
 ASSERT .main-page IS VISIBLE
 }
 {Java/C\#/Python/JS}
@@ -191,11 +192,11 @@ Example:\newline\newline
 
 ASSERT SUCCESS\newline
 ASSERT RESPONSE IS JSON\newline
-ASSERT RESPONSE CONTAINS ‘\{ \newline
+ASSERT RESPONSE CONTAINS '\{ \newline
  	name: <string>, \newline
  	pages: <array::int>,\newline
  	data: { id: [1,2,3] }\newline
-\}’
+\}'
 }
 {Java/C\#/Python/JS}
 {Karol Andrusieczko}
@@ -205,7 +206,7 @@ ASSERT RESPONSE CONTAINS ‘\{ \newline
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
 {RequireJS support in Eclipse}
-{Eclipse plugin that supports basic module operations like organize imports or ‘go to definition’} 
+{Eclipse plugin that supports basic module operations like organize imports or 'go to definition'} 
 { 
 \begin{itemize}
 	\item[-] find usage of an object  function
@@ -325,7 +326,7 @@ visualise result files (Common formats). Notify and display build status (Web pa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
 {Performance tests plugin for Jenkins}
-{Jenkins plugin for execution and visualisation of performance tests’ results} 
+{Jenkins plugin for execution and visualisation of performance tests' results} 
 { 
 \begin{itemize}
 \item[-] runs JUnit tests marked with @Performance annotation
@@ -341,12 +342,12 @@ visualise result files (Common formats). Notify and display build status (Web pa
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
 {Website branding validator}
-{Sometimes the branding (i.ex. name of company/product, logo or logotype) is changing. It would be useful to have a website crawler to walk the website and validate that all proper changes has been introduced.} 
+{Sometimes the branding (i.e. name of company/product, logo or logotype) is changing. It would be useful to have a website crawler to walk the website and validate that all proper changes has been introduced.} 
 {
-A program in any form that will accept inputs as i. ex. renames, brand colors etc and will crawl given website looking for errors in logotype or branding.
+A program in any form that will accept inputs as i.e. renames, brand colors etc and will crawl given website looking for errors in logotype or branding.
 }
 {Continuous integration system}
-{Mateusz Wroński}
+{Mateusz Wronski}
 {1 semester}
 {1-2}
 \end{project}
@@ -379,7 +380,8 @@ Also adding category to the article would be beneficial. End-user should be able
 \begin{itemize}
 \item[-] Creative design of News \& Team Server and end-widgets on different OS
 platforms.
-\item[-] Programming language or development environment is free to choose – open source-based libraries will be preferable
+\item[-] Programming language or development environment is free to choose, open
+source-based libraries will be preferable
 \item[-] Possibility of applying database systems
 \item[-] Knowledge of Linux-based operating system
 \item[-] Knowledge of networking protocols
@@ -405,7 +407,7 @@ lines taken from specific .xml files defined in BTSs. Moreover it should provide
 platforms.
 \item[-] Creative design of monitoring tool
 \item[-] Programming language or development environment is free to choose
-(e.g., .NET, Java, Phyton, C++…) – open source-based libraries will be
+(e.g. .NET, Java, Phyton, C++, \dots), open source-based libraries will be
 preferable
 \item[-]  Possibility of applying database systems
 \item[-]  Knowledge of Linux-based operating system
