@@ -1,0 +1,77 @@
+\documentclass[article]{article}
+
+\usepackage[top=0.7in, bottom=0.7in, left=0.5in, right=0.5in]{geometry}
+\usepackage[svgnames]{xcolor}
+\usepackage{times}
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+\usepackage{booktabs}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{amsfonts, amsmath, amsthm, amssymb}
+\usepackage{wrapfig}
+\usepackage{tikz}
+\usepackage{colortbl}
+
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+
+\usepackage{fancyhdr}
+\usepackage[yyyymmdd,hhmmss]{datetime}
+\renewcommand{\headrulewidth}{0pt}
+\pagestyle{fancy}
+\rfoot{Compiled on \today\ at \currenttime}
+\cfoot{}
+\lfoot{Page \thepage}
+
+%---------------------------------------------------------------
+% NSN primary colors
+\definecolor{yellow}{HTML}{FFCC00}
+\definecolor{orange}{HTML}{FF9900}
+\definecolor{purple}{HTML}{660066}
+\definecolor{lightyellow}{HTML}{FFD633}
+\definecolor{lightpurple}{HTML}{D1B2D1}
+
+%---------------------------------------------------------------
+\newcommand{\header} {
+	\vspace*{-1.0cm}
+	\begin{tikzpicture}[remember picture, overlay]
+  	\node [anchor=north east, inner sep=20pt]  at (current page.north east)
+    	 {\includegraphics[width=4cm]{logo.png}};
+	\end{tikzpicture}\\
+	\huge\color{purple}\noindent\textbf{Innovative Projects}\\
+	\huge\color{Black} {Summer 2014}\\[0.5cm]
+	\large contact: mateusz.jaworski@nsn.com\\
+	\hline
+	\vspace{1cm}
+}
+
+
+\newcounter{projectCounter}
+\renewcommand{\arraystretch}{2}
+\newcolumntype{y}{>{\columncolor{lightyellow}}l}
+\newenvironment{project}[7]{
+	\stepcounter{projectCounter}
+	\header
+	\begin{center}
+	    \begin{tabular}{ | y | p{12cm} |}
+	    \hline\rowcolor{lightpurple}
+		Nr \arabic{projectCounter} & \Large #1\\\hline
+		\textbf{Project goals} & #2\\\hline
+		\textbf{Scope definition} & #3\\\hline
+		\textbf{Requirements} & #4\\\hline
+		\textbf{Author} & #5\\\hline
+		\textbf{Planned duration} & #6\\\hline
+		\textbf{Team size} & #7\\\hline
+	    \end{tabular}
+	\end{center}
+	\newpage
+}
+
+
+  
+%---------------------------------------------------------------
+\begin{document}
+
+\include{projects}
+
+\end{document}
