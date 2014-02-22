@@ -1,5 +1,5 @@
 #TeXlipse project settings
-#Fri Feb 21 11:39:45 CET 2014
+#Sat Feb 22 19:59:13 CET 2014
 markTmpDer=true
 builderNum=2
 outputDir=
@@ -8,7 +8,7 @@ bibrefDir=
 outputFormat=pdf
 tempDir=bin
 mainTexFile=main.tex
-outputFile=main.pdf
+outputFile=InnovativeProjects - Topics.pdf
 langSpell=en
 markDer=true
-srcDir=src
+srcDir=src/
