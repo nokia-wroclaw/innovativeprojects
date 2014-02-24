@@ -4,7 +4,7 @@ Innovative Projects
 ==========================
 
 ###### For students
-> Do you want to get more programming know-how and professional experience? Or maybe you are bored with academic projects which end on a bookshelf? Or you want to see how programmers work in a big software company? Choose any project from the list, bring your friends and start coding. Let's do some awesome shit together.
+> Do you want to get more **programming know-how** and professional experience? Or maybe you are **bored with academic projects** which end on a bookshelf? Or you want to see how programmers work in a **big software company**? Choose any project from the list, bring your friends and start coding. Let's do some **awesome** shit together.
 
 ######  For NSN employees
 > Are you getting bored at work? Do you have an **amazing idea**, but no clue how to make it happen? Or maybe you have an amazing idea, but **no time** to implement it?
