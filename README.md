@@ -12,4 +12,4 @@ Innovative Projects
 
 Innovative Projects is an idea of cooperation between NSN and universities. For each academic semester NSN announces a list of topics which students can implement during their lectures or free time. Author of an idea becomes a tutor and helps the students in the project. 
 
-##### Current list of available topics: [PDF](InnovativeProjects%20-%20Topics.pdf)
+##### Current list of available topics:  [PDF](https://raw.github.com/nsn-wroclaw/innovativeprojects/master/InnovativeProjects%20-%20Topics.pdf)
