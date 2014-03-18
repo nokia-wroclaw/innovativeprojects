@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usepackage{colortbl}
 \usepackage[yyyymmdd,hhmmss]{datetime}
+\usepackage{soul}
 
 \usepackage[scaled]{uarial}
 \renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
@@ -71,6 +72,8 @@
 	    \end{tabular}
 	\end{center}
 }
+
+ \newcommand{\implemented}[1]{\st{#1} \small\textit{(under implementation)}} 
 
 %---------------------------------------------------------------
 \begin{document}
