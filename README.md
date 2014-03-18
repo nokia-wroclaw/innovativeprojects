@@ -12,4 +12,14 @@ Innovative Projects
 
 Innovative Projects is an idea of cooperation between NSN and universities. For each academic semester NSN announces a list of topics which students can implement during their lectures or free time. Author of an idea becomes a tutor and helps the students in the project. 
 
-##### Current list of available topics:  [PDF](https://raw.github.com/nsn-wroclaw/innovativeprojects/master/InnovativeProjects%20-%20Topics.pdf)
+#### Current list of available topics:  [PDF](https://raw.github.com/nsn-wroclaw/innovativeprojects/master/InnovativeProjects%20-%20Topics.pdf)
+
+---
+
+| Projects under implementation | Link                       |
+| ---------------------------------- | ----------------- |
+| Focus meter           |  https://github.com/nsn-wroclaw/innovativeproject-focusmeter |
+| Mobile application facilitating meeting data exchange    |  https://github.com/nsn-wroclaw/innovativeproject-meetinghelper |
+| Mobile application facilitating meeting data exchange    |  https://github.com/nsn-wroclaw/innovativeproject-meetingdataexchange |
+| Database shepherd     |  https://github.com/nsn-wroclaw/innovativeproject-dbshepherd |
+| Meeting helper device | https://github.com/nsn-wroclaw/innovativeproject-meetingshelperdevice |
