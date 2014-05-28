@@ -23,4 +23,3 @@ Innovative Projects is an idea of cooperation between NSN and universities. For 
 | Mobile application facilitating meeting data exchange    |  https://github.com/nsn-wroclaw/innovativeproject-meetingdataexchange |
 | Database shepherd     |  https://github.com/nsn-wroclaw/innovativeproject-dbshepherd |
 | Meeting helper device | https://github.com/nsn-wroclaw/innovativeproject-meetingshelperdevice |
-| OCR for graphs | https://github.com/nsn-wroclaw/innovativeproject-ocrforgraphs |
