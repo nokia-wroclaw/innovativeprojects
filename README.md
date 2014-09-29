@@ -1,4 +1,4 @@
-![](https://raw.github.com/nsn-wroclaw/innovativeprojects/master/src/figures/logo.png)
+![](https://raw.github.com/nsn-wroclaw/innovativeprojects/master/src/figures/nokia-logo.png)
 
 Innovative Projects
 ==========================
@@ -21,8 +21,5 @@ In case of any questions, proposals or improvements just write to us: innovative
 
 | Projects under implementation | Link                       |
 | ---------------------------------- | ----------------- |
-| Focus meter           |  https://github.com/nsn-wroclaw/innovativeproject-focusmeter |
-| Mobile application facilitating meeting data exchange    |  https://github.com/nsn-wroclaw/innovativeproject-meetinghelper |
-| Mobile application facilitating meeting data exchange    |  https://github.com/nsn-wroclaw/innovativeproject-meetingdataexchange |
-| Database shepherd     |  https://github.com/nsn-wroclaw/innovativeproject-dbshepherd |
-| Meeting helper device | https://github.com/nsn-wroclaw/innovativeproject-meetingshelperdevice |
+|  |  |
+
