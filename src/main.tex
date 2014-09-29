@@ -28,9 +28,9 @@
 \renewcommand{\headrulewidth}{0pt}
 \setlength{\headheight}{96pt} 
 \lhead{
-	\huge\color{purple}\noindent\textbf{Innovative Projects}\\
-	\huge\color{Black} {Summer 2014}\\[0.5cm]
-	\large contact: mateusz.jaworski@nsn.com\\[0.4cm]
+	\huge\color{nokiaBlue}\noindent\textbf{Innovative Projects}\\
+	\huge\color{Black} {Winter 2014}\\[0.5cm]
+	\large contact: innovative.projects@nsn.com\\[0.4cm]
 	\hrule
 }
 
@@ -40,30 +40,28 @@
 
 \pagestyle{fancy}
 \rfoot{\today T\currenttime}
-\cfoot{\url{www.bepartofsomething.eu}\\\url{https://github.com/nokia-wroclaw/innovativeprojects}}
+\cfoot{\url{http://nokiawroclaw.pl/}\\\url{https://github.com/nokia-wroclaw/innovativeprojects}}
 \lfoot{Page \thepage}
 
 %---------------------------------------------------------------
-% NSN primary colors
-\definecolor{yellow}{HTML}{FFCC00}
-\definecolor{orange}{HTML}{FF9900}
-\definecolor{purple}{HTML}{660066}
-\definecolor{lightyellow}{HTML}{FFD633}
-\definecolor{lightpurple}{HTML}{D1B2D1}
+% Nokia primary colors
+\definecolor{nokiaGray}{HTML}{68717A}
+\definecolor{nokiaBlue}{HTML}{124191}
+\definecolor{nokiaLightBlue}{HTML}{A8BBC0}
 
 %---------------------------------------------------------------
 
 \newcounter{projectCounter}
 \renewcommand{\arraystretch}{2}
-\newcolumntype{y}{>{\columncolor{lightyellow}}l}
+\newcolumntype{y}{>{\columncolor{nokiaGray}}l}
 \newenvironment{project}[7]{
 	\stepcounter{projectCounter}
 	\addcontentsline{toc}{section}{#1}
 	\begin{center}
 	    \begin{tabular}{ | y | p{12cm} |}
-	    \hline\rowcolor{lightpurple}
-		\Large \#\arabic{projectCounter} & \Large #1\\\hline
-		\textbf{Project goals} & #2\\\hline
+	    \hline\rowcolor{nokiaBlue}
+		\textcolor{white}{\Large \#\arabic{projectCounter}} & \textcolor{white}{\Large
+		#1}\\\hline \textbf{Project goals} & #2\\\hline
 		\textbf{Scope definition} & #3\\\hline
 		\textbf{Requirements} & #4\\\hline
 		\textbf{Author} & #5\\\hline
