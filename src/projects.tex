@@ -36,6 +36,36 @@ inventory methods like LIFO, FIFO, etc.
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
+{Where is my boss?}
+{Mobile application for finding coworkers and user location in a building} 
+{ 
+We are living in environment with abundance of radio signals. Some signal are easy to receive on long distance
+(for instance FM radio) and some are designed to serve on smaller area
+(\url{http://en.wikipedia.org/wiki/IBeacon}).
+Wi-Fi has range about 60 meters. All devices which are designed to use Wi-Fi can calculate Received Signal 
+Strength Indication (RSSI) which tells the device about power of received radio signal. Such RSSI could
+(with simple and naive approach) tell how far we are from source of signal. If
+there are many Wi-Fi fields, we can estimate our position based on RSSI from different sources.\newline
+
+Goal of project would be to produce application which will work in two modes.
+First mode (lets name it Scout Mode) will run periodical checks of Wi-Fi RSSI from all sources in "sight".
+After Scouting the area (just by walking with device), data will be saved and pushed to data mining program
+(either on device or on remote server). Data mining program will try to classify data based on one parameter - 
+number of rooms, floors etc. Then application could be switched to second mode (Location mode) which will 
+check Wi-Fi RSSI for current location, push it to data mining script and receive result. With some luck result
+could give indicator in which room/floor user is currently. The same
+data can be used for determining position of other application users.\newline
+
+Project should be implemented either on Android or on Linux, preferably by using
+Android SDK or Python. Knowledge of unsupervised learning techniques are not required. 
+}
+{Android SDK or Python}
+{Damian Melniczuk}
+{1 semester}
+{1-5}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
 {Optimal subset}
 {Algorithm for finding optimal subset of elements based on given conditions} 
 { 
