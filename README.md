@@ -19,7 +19,4 @@ In case of any questions, proposals or improvements just write to us: innovative
 
 ---
 
-| Projects under implementation | Link                       |
-| ---------------------------------- | ----------------- |
-| DocsDB |  |
 
