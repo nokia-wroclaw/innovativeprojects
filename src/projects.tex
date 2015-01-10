@@ -1,5 +1,52 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
+{LTE network simulator}
+{Help novice to understand message flow in cellular network} 
+{ 
+Create web application visualizing message flow in cellular network. Starting
+from one LTE base station and one cell phone visualize what messages are exchanged between them 
+in situation like: UE start up, phone call, SMS, web browsing, etc.
+}
+{At least one team member with telecommunication knowledge.}
+{Marek Kukulski}
+{1 semester}
+{2-5}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Lightweight C++11 code model}
+{Develop a plugin for Vim or Emacs which uses Clang to provide real-time
+syntax highlighting, code completion and error/warning indication} 
+{ 
+Modern C++ IDEs such as Qt Creator or Microsoft Visual Studio provide code
+models for real-time syntactic and semantic code analysis. This greatly enhances 
+the programming experience, allowing for faster and more convenient development. 
+However, sometimes developers are required to work on remote machines, e.g. via SSH. 
+In such circumstances it is impossible to use heavy tools with sophisticated GUIs. 
+On the other hand, console text editors do not provide satisfactory code models. 
+Existing plugins are often difficult to configure and aimed mainly at graphical versions of the editors. 
+They also cause significant problems when new C++11 constructs are used. The growing popularity of Clang,
+a modern compiler which supports the full C++11 standard and provides a convenient API, seems to indicate 
+the possibility to provide a lightweight plugin for one of the popular console text editors such as Vim or 
+Emacs – one that would support real-time syntax highlighting, code completion, compiler error/warning indication. 
+ 
+The plugin will have to be able to:
+\begin{itemize}
+	\item[-] Load projects, preferably using CMake input files.
+	\item[-] Parse the headers and source files belonging to the project as well as
+	system libraries to provide a list of available symbols.
+	\item[-] Perform on-the-fly code inspection, verifying its syntactic correctness and the symbols used.
+	\item[-] Provide real-time information on types of variables, class members and function arguments.
+	\item[-] Locate class and function declarations and definitions.
+\end{itemize} 
+ }
+{At least one team member with telecommunication knowledge.}
+{Marek Gulanowski}
+{1 semester}
+{2-5}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
 {Lost signal}
 {Finding closest position with the mobile network signal} 
 { 
