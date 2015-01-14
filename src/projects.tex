@@ -83,36 +83,6 @@ inventory methods like LIFO, FIFO, etc.
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Where is my boss?}
-{Mobile application for finding coworkers and user location in a building} 
-{ 
-We are living in environment with abundance of radio signals. Some signal are easy to receive on long distance
-(for instance FM radio) and some are designed to serve on smaller area
-(\url{http://en.wikipedia.org/wiki/IBeacon}).
-Wi-Fi has range about 60 meters. All devices which are designed to use Wi-Fi can calculate Received Signal 
-Strength Indication (RSSI) which tells the device about power of received radio signal. Such RSSI could
-(with simple and naive approach) tell how far we are from source of signal. If
-there are many Wi-Fi fields, we can estimate our position based on RSSI from different sources.\newline
-
-Goal of project would be to produce application which will work in two modes.
-First mode (lets name it Scout Mode) will run periodical checks of Wi-Fi RSSI from all sources in "sight".
-After Scouting the area (just by walking with device), data will be saved and pushed to data mining program
-(either on device or on remote server). Data mining program will try to classify data based on one parameter - 
-number of rooms, floors etc. Then application could be switched to second mode (Location mode) which will 
-check Wi-Fi RSSI for current location, push it to data mining script and receive result. With some luck result
-could give indicator in which room/floor user is currently. The same
-data can be used for determining position of other application users.\newline
-
-Project should be implemented either on Android or on Linux, preferably by using
-Android SDK or Python. Knowledge of unsupervised learning techniques are not required. 
-}
-{Android SDK or Python}
-{Damian Melniczuk}
-{1 semester}
-{1-5}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
 {Optimal subset}
 {Algorithm for finding optimal subset of elements based on given conditions} 
 { 
@@ -145,24 +115,6 @@ Really helpful when you are tired in a bus or tram.
 {Jakub Stasiak}
 {1 semester}
 {1-3}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Anonymous surveys}
-{Web application for making anonymous surveys}
-{
-Application should allow survey creation for dedicated group of people. 
-Neither survey author nor participants could be able match people with answers.
-Participants should be able to verify if their answers were not modified. 
-Security of the solution should be provable. Questions can have a form of T/F
-checkboxes, comboboxes and text fields (in this case we can assume that the
-participants are aware of the risk of revealing themselves). Project can include
-adjustment of existing solution for voting.
-}
-{-}
-{Mateusz Jaworski}
-{1 semester}
-{1-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
@@ -254,18 +206,6 @@ written in python, java, scala or any other language, not necessarily in SQL
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Lightweight \& energy saving continuous integration}
-{Lightweight server for running build scripts with command line interface for configuration and simple web page for results presentation.} 
-{ 
-Checkout SVN \& Git repositories periodically Run build scripts Parse and
-visualise result files (Common formats). Notify and display build status (Web page, Emails }
-{Preferred technology: NodeJS}
-{Mateusz Jaworski}
-{1 semester}
-{1-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
 {Website branding validator}
 {Sometimes the branding (i.e. name of company/product, logo or logotype) is changing. It would be useful to have a website crawler to walk the website and validate that all proper changes has been introduced.} 
 {
@@ -275,32 +215,6 @@ A program in any form that will accept inputs as i.e. renames, brand colors etc 
 {Mateusz Wronski}
 {1 semester}
 {1-2}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{DocsDB}
-{Database system that will be able to store and index any popular form of
-documents like mails, microsoft office formats, pdfs.}
-{
-Web application with simple human interface based on google's search engine and
-RESTful API for feeding the database.
-Application should provide full-text search for the stored documents which can be based on Elasticsearch database.
-Possible extensions:
-\begin{itemize}
-  \item[-] ability to fetch and index e-mail boxes
-  \item[-] ability to index files from disks
-\end{itemize}
-Useful links
-\begin{itemize}
-  \item[-] \url{http://www.elasticsearch.org}
-  \item[-] \url{http://tika.apache.org}
-  \item[-] \url{http://aperture.sourceforge.net}
-\end{itemize}
-}
-{NoSQL database}
-{Mateusz Jaworski}
-{1 semester}
-{1-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
@@ -334,21 +248,6 @@ Those peripheral devices could have a form of RGB lamps, signal lights (same as 
 {Mateusz Jaworski}
 {1 semester}
 {1-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Meetings Helper Device}
-{Design and create prototype of device to simplify sending recorded materials
-(a/v, photos) to meeting attendees.} {
-Meetings Helper should be a standalone device that would allow you to record audio / video 
-and to take photos (with integrated camera or using a phone). At the beginning of the meeting 
-attendees use their ID Cards (with RFID?) to register themselves at the meeting. 
-During the meeting they take some photos / record videos and then using one button 
-the device distributes recorded materials to everyone that has been attending (via e-mail). }
-{-}
-{Mateusz Jaworski}
-{1-2 semester}
-{2-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
@@ -411,39 +310,6 @@ ASSERT .main-page IS VISIBLE
 {Mateusz Jaworski}
 {1 semester}
 {1-3}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Acceptance tests framework for REST APIs}
-{Web API testing/documenting framework in natural language (similar/based on Cucumber or Concordion).} 
-{ 
-Example:\newline\newline
-\verb|OPEN http://www.nsn.com/api/data?id=123\newline
-
-ASSERT SUCCESS\newline
-ASSERT RESPONSE IS JSON\newline
-ASSERT RESPONSE CONTAINS '\{ \newline
- 	name: <string>, \newline
- 	pages: <array::int>,\newline
- 	data: { id: [1,2,3] }\newline
-\}'
-}
-{Java/C\#/Python/JS}
-{Mateusz Jaworski}
-{1 semester}
-{1-3}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Jenkins Shepherd}
-{Single web application for multiple Jenkins servers managing} 
-{ 
-Functionalities: mass update, copying single job, copying whole configuration, defining workflows, aggregated statistics, visualisation of jobs relations
-}
-{NodeJS/Python/Java}
-{Mateusz Jaworski}
-{1-2 semester}
-{1-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
