@@ -1,5 +1,92 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
+{Virtual reality data exploration}
+{Data immersion - exploring the data in Virtual Reality.} 
+{ 
+Mobile app (applicable for Oculus Rift):
+\begin{itemize}
+	\item[-] Reading the data and creating the cloud of points, surfaces etc.
+	\item[-] Handling events (e.g. clicking on point to get more detailed meta-data)
+\end{itemize}
+\begin{center}\includegraphics[height=4cm]{oculus.png}\end{center}
+}
+{-}
+{Slawomir Andrzejewski, Krzysztof Wascinski, Krzysztof Wisniowski}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Universal YANG data parser for Cloud Network Element configuration}
+{Introduction of Cloud Network Elements support for automated configuration planning.} 
+{ 
+Create web based tool which enables to import Cloud NE file based configuration and translate it to standarized xls-based format. Cloud NE parametrization is based on YANG model with usage of NETCONF protocol, both open and standarized formats. Solution should provide also export functonality.
+\begin{center}\includegraphics[height=8cm]{yang.png}\end{center}
+}
+{-}
+{Pawel Dmochowski, Mariusz Wegrzyn}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{IoT aided planning of urban transport infrastructure}
+{IoT aided algorithms for urban transport infrastructure planning.} 
+{ 
+Looking for correlations for various sources of public data to help planning of urban transport network infrastructure.
+
+\textbf{Inputs:}
+\begin{itemize}
+	\item[-] Urban bike data WRM/Nextbike, time and place of rental and return, data from the last year
+	\item[-] Public transport (MPK) data on vehicles location, historical data from the last year
+	\item[-] Urban-scale average speed, public data (korkowo.pl), or data from urban monitoring
+	\item[-] Weather reports, publicly available historical data from the last year
+	\item[-] GPS logs of users logging their bike routes into the social media, Endomondo, European Cycling Challenge
+\end{itemize} 
+\textbf{Outputs and analytics:}
+\begin{itemize}
+	\item[-] Planning of the new cycling routes based on the point of rental and return of the bike
+	\item[-] Planning of the new cycling routes based on the route occupation from its  GPS profile on social media
+	\item[-] Correlation of urban bike stations with bus stops, opportunities to join both forms of transportation
+	\item[-] Mutual dependency between vehicles average speed and number of bikes in use, estimations how much bikes would reduce traffic jam significantly,
+	\item[-] Correlation of bikes in use with weather 
+\end{itemize} 
+}
+{-}
+{Piotr Grzybowski}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Predicting trends and factors affecting environmental pollution}
+{Predicting trends and factors affecting environmental pollution, looking for the main affecting factors and means to restrict them, benchmarking with other agglomerations.} 
+{ 
+Looking for correlations for various sources of public data to predict the likelihood of growth in air pollution.
+
+\textbf{Inputs:}
+\begin{itemize}
+	\item[-] Urban-scale average speed, public data (korkowo.pl), or data from urban monitoring
+	\item[-] Weather reports, publicly available historical data from the last year
+	\item[-] Air pollution data from measuring stations, historical data from the last year
+	\item[-] Urban data of the cities studied (size, population, public transport, traffic jams)
+	\item[-] Calendar of local festivals and events
+\end{itemize} 
+\textbf{Outputs and analytics:}
+\begin{itemize}
+	\item[-] Determine the correlation between air pollution, car traffic and weather conditions, finding trends.
+	\item[-] Finding repeating patterns would allow the creation of smog warnings.
+	\item[-] Verification of patterns between different towns.
+	\item[-] City benchmarking
+\end{itemize} 
+}
+{-}
+{Piotr Grzybowski}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
 {LTE network simulator}
 {Help novice to understand message flow in cellular network} 
 { 
@@ -93,90 +180,6 @@ When user after some time have such problem and doesn't remember how can help, h
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Lost signal}
-{Finding closest position with the mobile network signal} 
-{ 
-Let assume that we are picking up mushrooms in a forest or we are climbing in
-the mountains. Our friend had an accident. We need to call for help. Our mobile
-says: \textit{Sorry dude, no signal}. We are in a deep shit.\linebreak
-
-Application could periodically test the network signal and correlate this data
-with our position from GPS. Then, if needed, it could lead us to the closest
-position with the last visible signal. Application can also consist of web service that would
-gather the data from other users and would allow to download the area coverage
-for the offline usage. It can also use maps (HERE, Google, etc.) for the
-localization purposes.
-}
-{-}
-{Mateusz Jaworski}
-{1 semester}
-{1-5}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Smart, memory-saving collections in Java}
-{Java library to store large objects collections in memory. Research and comparison of different techniques.} 
-{ 
-Create library that transparently saves memory usage of large collections. 
-For instance: first zip objects in memory, then serialize them to disk when
-they are still not accessed. Try out different compression algorithms and
-inventory methods like LIFO, FIFO, etc.
-}
-{Java}
-{Mateusz Jaworski}
-{1 semester}
-{1-2}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Optimal subset}
-{Algorithm for finding optimal subset of elements based on given conditions} 
-{ 
-Database contains millions of entries with different properties. The idea is to
-implement solution that would be able to find minimal set of entries covering
-set of given rules. In the worst case (depending on rules) problem is NP hard.
-Rules has to be easily editable. Example conditions:\newline
-\verb|
-
-at least 60\% of results has property A = 1 \newline
-at most 10\% of results has property B in (1,3,4) \newline
-at least 1 result has property C = 7 \newline
-at least 25\% of results has property D matching /abc-.*$/ \newline
-
-}
-{-}
-{Rafal Mijas}
-{1 semester}
-{1-2}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{GPS waker-upper}
-{Mobile waker-upper with GPS}
-{
-Mobile application that can notify you when you are around your destination.
-Really helpful when you are tired in a bus or tram.
-}
-{-}
-{Jakub Stasiak}
-{1 semester}
-{1-3}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Help!}
-{Mobile application for calling for help in urgent cases} 
-{ 
-Application should consist of simple interface that would be easy to use in
-stress and harsh conditions. It would allow to notify family, police or call for
-ambulance with a few clicks. It can send sms, email or just call (voice
-synthesis) and provide predefined user information and GPS position. It can also
-contain first aid hints.
-} {-}
-{Mateusz Jaworski} {1 semester} {1-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
 {Big Data spreadsheet}
 {Spreadsheet application for big data analysis} 
 { 
@@ -187,79 +190,6 @@ independent application or library.
 } 
 {-}
 {John Torregoza}
-{1 semester}
-{1-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Ad hoc search engine}
-{Application for crawling web pages in a fastly changing environment} 
-{ 
-Web application that would allow crawling web pages for the given set of
-key words. The data does not have to be stored and indexed as usually do the web
-search engines because of its volatility. It could support authentication on
-subpages with the given username and password.
-}
-{-}
-{Adam Pomykala}
-{1 semester}
-{1-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Network Simulator}
-{Monte Carlo simulator for mobile networks} 
-{ 
-Application that would allow simulating network behaviour for the given
-topology, UEs distribution, pathloss model and power control algorithms. It
-could also support different traffic models and present detailed interferention
-statistics.
-} 
-{-}
-{Adam Pomykala}
-{1 semester}
-{1-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{SQL unit}
-{Test framework for SQL queries and functions} 
-{ 
-Test framework that would allow writing unit tests for SQL code. Should be
-driver independent and support standard SQL syntax (but obviously additional
-extensions for specific database features would be welcome). Tests can be
-written in python, java, scala or any other language, not necessarily in SQL
-(probably it would not be a good idea).
-}
-{Preferred databases: MySQL, PostgreSQL}
-{Mateusz Jaworski}
-{1 semester}
-{1-3}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Website branding validator}
-{Sometimes the branding (i.e. name of company/product, logo or logotype) is changing. It would be useful to have a website crawler to walk the website and validate that all proper changes has been introduced.} 
-{
-A program in any form that will accept inputs as i.e. renames, brand colors etc and will crawl given website looking for errors in logotype or branding.
-}
-{-}
-{Mateusz Wronski}
-{1 semester}
-{1-2}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Augmented notification system}
-{Composite solution for distributing notifications via light, sound and touch.}
-{
-The system could have a form of central controller with many different 
-peripheral devices that would be used for handling notifications and alarms. 
-The main aim is to present status of continuous integration server in a highly visible manner. 
-Those peripheral devices could have a form of RGB lamps, signal lights (same as used for the traffic control) or usb rocket launchers.
-}
-{-}
-{Mateusz Jaworski}
 {1 semester}
 {1-4}
 \end{project}
@@ -305,45 +235,6 @@ There are many applications in the world that generate logs in text format. It i
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Acceptance tests framework for JS-heavy web applications}
-{Web testing framework for acceptance tests in natural language (similar/based
-on Cucumber) for JS-heavy (AJAX) web applications.} 
-{ 
-Example:\newline\newline
-\verb|OPEN http://www.nsn.com\newline 
-
-TYPE 'hello' INTO .login-input\newline
-TYPE 'pasword' INTO .pass-input\newline
-CLICK input[type=submit]\newline
-
-ASSERT SUCCESS\newline
-ASSERT .status CONTAINS 'welcome'\newline 
-ASSERT .main-page IS VISIBLE
-}
-{Java/C\#/Python/JS}
-{Mateusz Jaworski}
-{1 semester}
-{1-3}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Jenkins: deployment plugin}
-{Plugin for web applications deployment} 
-{ 
-After build:
-\begin{itemize}
-\item[-] connect via ssh with remote server
-\item[-] copy and unzip selected artefacts
-\item[-] run script externally
-\end{itemize}
-}
-{NodeJS/Python/Java}
-{Wojciech Stachowski}
-{1 semester}
-{1-2}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
 {Jenkins build trigger}
 {Jenkins plugin for builds triggering based on result of database query} 
 { 
@@ -351,22 +242,6 @@ Jenkins periodically queries the database, builds are triggered when query resul
 }
 {Support for PostgreSQL, MongoDb}
 {Jacek Tomasiak}
-{1 semester}
-{1-2}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Performance tests plugin for Jenkins}
-{Jenkins plugin for execution and visualisation of performance tests' results} 
-{ 
-\begin{itemize}
-\item[-] runs JUnit tests marked with @Performance annotation
-\item[-] generates report in xml format
-\item[-] presents results on CI server
-\end{itemize}
-}
-{Preferred language: Java (JUnit)}
-{Mateusz Jaworski}
 {1 semester}
 {1-2}
 \end{project}
