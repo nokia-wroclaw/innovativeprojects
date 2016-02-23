@@ -206,6 +206,32 @@ Knowledge-Based Expert System (KBES) is an artificial intelligence branch used f
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
+{Nvidia CUDA acceleration for robotic algorithms}
+{Our task is to adjust ODE solver, matrix operations, and other necessary components to easily work with both CPU and GPU exploiting theirs full performance.}
+{
+Basic work to be done (list is not exhaustive):
+\begin{itemize}
+\item implement an OdeInt facade
+\item integrate boost::ublas and thrust::device\_vector interfaces
+\item implement (serial) some basic robotic (not necessarily) algorithms
+\item re-implement them in parallel
+\end{itemize}
+During this project you will learn 
+\begin{itemize}
+\item how to use GPU to accelerate your algorithms
+\item how to effectively use your theoretical knowledge in real applications
+\item how to use version control tool (GitHub) and share your work with team
+\item how to use embedded hardware (Nvidia Jetson)
+\end{itemize}
+\begin{center}\includegraphics[height=4cm]{automdrive.png}\end{center}
+}
+{C++ (intermediate level), Interest in research in the field of artificial intelligence, control systems and GPU accelerated computing}
+{Pawel Ptasznik}
+{1 semester}
+{1-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
 {Eclipse plugin - Logs parser}
 {
 Implement Eclipse plugin that parses project source code for logs printings.
