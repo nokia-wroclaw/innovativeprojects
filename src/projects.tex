@@ -1,5 +1,201 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
+{Time Tracking Helper}
+{Develop a tool that will help to track office hours of employees.} 
+{ 
+A company X hires a lot of workers. Workers track their work-time in excel, which is not handy and error-prone.
+
+Project assumes development of two elements:
+\begin{itemize}
+	\item Chrome plugin
+		\begin{itemize}
+			\item track daily work hours of employee and send that information to server
+		\end{itemize}
+	\item Web application
+		\begin{itemize}
+			\item visualizes work hours (timeline)
+			\item displays additional information about work hours (week target, week overtime etc.)
+			\item sends notification to manager about employee status
+			\item generates reports
+		\end{itemize}
+\end{itemize}
+}
+{-}
+{Mateusz Wierzbicki}
+{1 semester}
+{2-5}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Mobile phone DevOps alarms delivery}
+{Develop a tool that will notify person via android app that some system or web application has crashed and/or behaves weirdly.} 
+{
+Application that has following components
+\begin{itemize}
+	\item Backend app
+		\begin{itemize}
+			\item monitors web services and generates and closes alarms when web applications are not responsive or has failing healthchecks
+			\item serves the mobile phone app
+		\end{itemize}
+	\item Android/mobile phone application
+		\begin{itemize}
+			\item Allows for subscription to alarms from particular services
+			\item Receives and displays alarms and alarm cancellations
+			\item Allows the technical stuff to ``claim`` the alarm (``I`m working on it`` notification)
+		\end{itemize}
+\end{itemize}
+Extra: application can be notified about events/alarms from Sensu system.
+
+Extra: backend can be notified about application events (``App x is rebooting for upgrade. Est downtime 30 minutes``)
+}
+{Any language, minimal frontend dev experience (frontend frameworks) or eager to learn Angular 2}
+{Mateusz Wronski}
+{1 semester}
+{3-5}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{NERD - NEwcomer Request Delivery}
+{Develop a tool that will speed up / automate newcomer enablement process by adding new user to projects, sending mail requests or manuals, and creating Jira tickets via REST API.} 
+{
+Manager wants to give access rights to tools required to work with project for every member that joins development team (Jenkins, application server, Jira, confluence, GIT repository, etc). There also must be mail notifications to development team and product owner about new team member. Newcomer should get mail with set of instructions/manuals/requrements.
+
+There are two steps:
+\begin{itemize}
+	\item Project configuration in NERD Tool:
+		\begin{itemize}
+			\item Add email sending function:
+				\begin{itemize}
+					\item Configure target email and message/content. Mail message template can be edited with BBCode or Markdown.
+				\end{itemize}
+		\end{itemize}
+	\item Add jira ticket creation function:
+		\begin{itemize}
+			\item Configure target Jira address/project id and ticket description
+			\item Send access rights request for given user:
+				\begin{itemize}
+					\item Choose previously configured project and attach user to it by his email address
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+}
+{
+Minimal experience or eager to learn:
+\begin{itemize}
+	\item Language for backend logic (i.e. Java + Play Framework)
+	\item Language for frontend logic (i.e. JavaScript + Angular2 or Java + Vaadin)
+	\item Data Base knowledge (i.e. Postgres + Ebean ORM or SQL)
+	\item REST web services
+\end{itemize}
+}
+{Blazej Krystek}
+{1 semester}
+{3-5}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{SSL/TLS support in Facebook Presto big data drivers}
+{Extend Facebook Presto MongoDB and Cassandra drivers with SSL/TLS connectivity.} 
+{
+Presto is a distributed-query engine from Facebook that allows cross-querying different databases.
+
+Connection to particular database implementation is handled by Connectors. Presto connectors lack support for SSL connections to databases, that would allow for connections between Presto and databases via non-separated, even public network. At the moment such configuration requires setup of many SSH tunnels.
+}
+{Java, basic knowledge of PKI/SSL mechanisms}
+{Mateusz Wronski, Michael Dec}
+{1 semester}
+{1-2}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Website branding validator}
+{Sometimes the branding (i.e. name of company/product, logo or logotype) is changing. It would be useful to have a website crawler to walk the website and validate that all proper changes has been introduced.} 
+{
+A program in any form that will accept inputs as i.e. renames, brand colors etc. and will crawl given website looking for errors in logotype or branding.
+}
+{-}
+{Mateusz Wronski}
+{1 semester}
+{1-2}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Surveys}
+{Web application for making anonymous surveys. As an extension – mobile application.} 
+{
+Application should allow survey creation for dedicated group of people. It should provide complete anonymity. Participants and creators should be able to see the history of their surveys. Questions can have standard form (for example: true/false checkboxes, comboboxes, text fields, etc.).
+}
+{Nice to have basic JS knowledge}
+{Ewa Kaczmarek}
+{1 semester}
+{1-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Workshop environment}
+{Web application for creating programming workshops.} 
+{
+Application should allow workshop creation dedicated for any programming language. Required functionalities of application: splitting material into chapters, presenting step by step parts of code (with syntax highlighting), showing tasks for participants with timer.
+}
+{Web technologies knowledge}
+{Ewa Kaczmarek}
+{1 semester}
+{3-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Cross application notification system}
+{Implement micro service allowing to easy manage users notifications. Service should aggregate all notifications from applications and/or users. Provide also web component for simple embed and display notifications inside our applications.} 
+{
+\begin{itemize}
+	\item Web component should allow to:
+		\begin{enumerate}
+			\item easy embed inside our applications;
+			\item display aggregated notifications;
+			\item dismiss single/all notification;
+			\item show details and links;
+		\end{enumerate}
+	\item Microservice should:
+		\begin{enumerate}
+			\item be secured source of data for web component;
+			\item provide API for automatic notifications form applications;
+			\item provide way to create manual notifications;
+			\item allow to scope notification message by type (info/warning/error), applications and user/user groups;
+			\item create easy way to notify end user about not read messages;
+		\end{enumerate}
+\end{itemize}
+}
+{-}
+{Dominik Markiewicz}
+{1 semester}
+{2-6}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Web component for display personalized applications dashboard}
+{Implement easy-to-use, personalized web component with our applications dashboard, allow to easly access internal nokia applications.  Web component should be embeded by our applications in navbar and allow to fast open/switch application. There should be also centralized database with applications with some minimal interface allowing to register such applications.} 
+{
+\begin{itemize}
+	\item Web component should allow to:
+		\begin{enumerate}
+			\item easy embed inside Our applications;
+			\item display tiles with most-used and/or most-important applications;
+			\item personalize displayed applications;
+		\end{enumerate}
+	\item Microservice should:
+		\begin{enumerate}
+			\item be secured source of data for web component;
+			\item should allow to register new applications with basic informations like icon, description, link etc.
+		\end{enumerate}
+\end{itemize}
+}
+{-}
+{Dominik Markiewicz}
+{1 semester}
+{1-3}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
 {Virtual reality data exploration}
 {Data immersion - exploring the data in Virtual Reality.} 
 { 
@@ -20,7 +216,7 @@ Mobile app (applicable for Oculus Rift):
 {Universal YANG data parser for Cloud Network Element configuration}
 {Introduction of Cloud Network Elements support for automated configuration planning.} 
 { 
-Create web based tool which enables to import Cloud NE file based configuration and translate it to standarized xls-based format. Cloud NE parametrization is based on YANG model with usage of NETCONF protocol, both open and standarized formats. Solution should provide also export functonality.
+Create web based tool which enables to import Cloud NE file based configuration and translate it to standardized xls-based format. Cloud NE parametrization is based on YANG model with usage of NETCONF protocol, both open and standarized formats. Solution should provide also export functonality.
 \begin{center}\includegraphics[height=8cm]{yang.png}\end{center}
 }
 {-}
