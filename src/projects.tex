@@ -1,57 +1,52 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Time Tracking Helper}
-{Develop a tool that will help to track office hours of employees.} 
-{ 
-A company X hires a lot of workers. Workers track their work-time in excel, which is not handy and error-prone.
+{Tools portfolio}
+{Web application with tools presentation as tiles with some description.} 
+{
+Application should allow to manage several tools and present them in a nice layout.
 
-Project assumes development of two elements:
-\begin{itemize}
-	\item Chrome plugin
-		\begin{itemize}
-			\item track daily work hours of employee and send that information to server
-		\end{itemize}
-	\item Web application
-		\begin{itemize}
-			\item visualizes work hours (timeline)
-			\item displays additional information about work hours (week target, week overtime etc.)
-			\item sends notification to manager about employee status
-			\item generates reports
-		\end{itemize}
-\end{itemize}
+Proposal functionalities:
+
+\begin{enumerate}
+	\item Each tool represented as a tile - image, title, short description and url.
+	\item Tool details on modal (long description, repository etc.)
+	\item Filtering - simple filters based on tags
+	\item Add to favourites
+	\item Notifications
+	\item Permissions - different views and details for different users
+	\item Admin panel - content management only for admins
+\end{enumerate}
+
+Final scope of project will be set with the team.
 }
-{-}
-{Mateusz Wierzbicki}
+{Web technologies knowledge}
+{Ewa Kaczmarek}
 {1 semester}
-{2-5}
+{4-6}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Mobile phone DevOps alarms delivery}
-{Develop a tool that will notify person via android app that some system or web application has crashed and/or behaves weirdly.} 
+{Workshop environment}
+{Web application for creating programming workshops.} 
 {
-Application that has following components
-\begin{itemize}
-	\item Backend app
-		\begin{itemize}
-			\item monitors web services and generates and closes alarms when web applications are not responsive or has failing healthchecks
-			\item serves the mobile phone app
-		\end{itemize}
-	\item Android/mobile phone application
-		\begin{itemize}
-			\item Allows for subscription to alarms from particular services
-			\item Receives and displays alarms and alarm cancellations
-			\item Allows the technical stuff to ``claim`` the alarm (``I`m working on it`` notification)
-		\end{itemize}
-\end{itemize}
-Extra: application can be notified about events/alarms from Sensu system.
-
-Extra: backend can be notified about application events (``App x is rebooting for upgrade. Est downtime 30 minutes``)
+Application should allow workshop creation dedicated for any programming language. Required functionalities of application: splitting material into chapters, presenting step by step parts of code (with syntax highlighting), showing tasks for participants with timer.
 }
-{Any language, minimal frontend dev experience (frontend frameworks) or eager to learn Angular 2}
-{Mateusz Wronski}
+{Web technologies knowledge}
+{Ewa Kaczmarek}
 {1 semester}
-{3-5}
+{3-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Retro Tool}
+{Web application for supporting Retrospective Meetings.}
+{
+Application should allow to manage several projects and create new posts in each of them and also show board with Working Agreements and Action Items.
+}
+{Nice to have basic JS knowledge}
+{Ewa Kaczmarek}
+{1 semester}
+{4-5}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
@@ -59,7 +54,7 @@ Extra: backend can be notified about application events (``App x is rebooting fo
 {Develop a tool that will speed up / automate newcomer enablement process by adding new user to projects, sending mail requests or manuals, and creating Jira tickets via REST API.} 
 {
 Manager wants to give access rights to tools required to work with project for every member that joins development team (Jenkins, application server, Jira, confluence, GIT repository, etc). There also must be mail notifications to development team and product owner about new team member. Newcomer should get mail with set of instructions/manuals/requrements.
-
+\bigbreak
 There are two steps:
 \begin{itemize}
 	\item Project configuration in NERD Tool:
@@ -94,17 +89,55 @@ Minimal experience or eager to learn:
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{SSL/TLS support in Facebook Presto big data drivers}
-{Extend Facebook Presto MongoDB and Cassandra drivers with SSL/TLS connectivity.} 
+{Cross application notification system}
+{Implement micro service allowing to easy manage users notifications. Service should aggregate all notifications from applications and/or users. Provide also web component for simple embed and display notifications inside our applications.} 
 {
-Presto is a distributed-query engine from Facebook that allows cross-querying different databases.
-
-Connection to particular database implementation is handled by Connectors. Presto connectors lack support for SSL connections to databases, that would allow for connections between Presto and databases via non-separated, even public network. At the moment such configuration requires setup of many SSH tunnels.
+\begin{enumerate}
+	\item Web component should allow to:
+		\begin{itemize}
+			\item easy embed inside our applications;
+			\item display aggregated notifications;
+			\item dismiss single/all notification;
+			\item show details and links;
+		\end{itemize}
+	\item Microservice should:
+		\begin{itemize}
+			\item be secured source of data for web component;
+			\item provide API for automatic notifications form applications;
+			\item provide way to create manual notifications;
+			\item allow to scope notification message by type (info/warning/error), applications and user/user groups;
+			\item create easy way to notify end user about not read messages;
+		\end{itemize}
+\end{enumerate}
 }
-{Java, basic knowledge of PKI/SSL mechanisms}
-{Mateusz Wronski, Michael Dec}
+{Web technologies knowledge}
+{Dominik Markiewicz}
 {1 semester}
-{1-2}
+{2-6}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Web component for display personalized applications dashboard}
+{Implement easy-to-use, personalized web component with our applications dashboard, allow to easly access internal nokia applications.  Web component should be embeded by our applications in navbar and allow to fast open/switch application. There should be also centralized database with applications with some minimal interface allowing to register such applications.} 
+{
+\begin{enumerate}
+	\item Web component should allow to:
+		\begin{itemize}
+			\item easy embed inside Our applications;
+			\item display tiles with most-used and/or most-important applications;
+			\item personalize displayed applications;
+		\end{itemize}
+	\item Microservice should:
+		\begin{itemize}
+			\item be secured source of data for web component;
+			\item should allow to register new applications with basic informations like icon, description, link etc.
+		\end{itemize}
+\end{enumerate}
+}
+{-}
+{Dominik Markiewicz}
+{1 semester}
+{1-3}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
@@ -120,78 +153,45 @@ A program in any form that will accept inputs as i.e. renames, brand colors etc.
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Surveys}
-{Web application for making anonymous surveys. As an extension - mobile application.} 
+{Mobile phone DevOps alarms delivery}
+{Develop a tool that will notify person via android app that some system or web application has crashed and/or behaves weirdly.} 
 {
-Application should allow survey creation for dedicated group of people. It should provide complete anonymity. Participants and creators should be able to see the history of their surveys. Questions can have standard form (for example: true/false checkboxes, comboboxes, text fields, etc.).
-}
-{Nice to have basic JS knowledge}
-{Ewa Kaczmarek}
-{1 semester}
-{1-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Workshop environment}
-{Web application for creating programming workshops.} 
-{
-Application should allow workshop creation dedicated for any programming language. Required functionalities of application: splitting material into chapters, presenting step by step parts of code (with syntax highlighting), showing tasks for participants with timer.
-}
-{Web technologies knowledge}
-{Ewa Kaczmarek}
-{1 semester}
-{3-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Cross application notification system}
-{Implement micro service allowing to easy manage users notifications. Service should aggregate all notifications from applications and/or users. Provide also web component for simple embed and display notifications inside our applications.} 
-{
+Application that has following components
 \begin{itemize}
-	\item Web component should allow to:
-		\begin{enumerate}
-			\item easy embed inside our applications;
-			\item display aggregated notifications;
-			\item dismiss single/all notification;
-			\item show details and links;
-		\end{enumerate}
-	\item Microservice should:
-		\begin{enumerate}
-			\item be secured source of data for web component;
-			\item provide API for automatic notifications form applications;
-			\item provide way to create manual notifications;
-			\item allow to scope notification message by type (info/warning/error), applications and user/user groups;
-			\item create easy way to notify end user about not read messages;
-		\end{enumerate}
+	\item Backend app
+		\begin{itemize}
+			\item monitors web services and generates and closes alarms when web applications are not responsive or has failing healthchecks
+			\item serves the mobile phone app
+		\end{itemize}
+	\item Android/mobile phone application
+		\begin{itemize}
+			\item Allows for subscription to alarms from particular services
+			\item Receives and displays alarms and alarm cancellations
+			\item Allows the technical stuff to ``claim`` the alarm (``I`m working on it`` notification)
+		\end{itemize}
 \end{itemize}
+\bigbreak
+Extra: application can be notified about events/alarms from Sensu system.
+
+Extra: backend can be notified about application events (``App x is rebooting for upgrade. Est downtime 30 minutes``)
 }
-{-}
-{Dominik Markiewicz}
+{Any language, minimal frontend dev experience (frontend frameworks) or eager to learn Angular 2}
+{Mateusz Wronski}
 {1 semester}
-{2-6}
+{3-5}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Web component for display personalized applications dashboard}
-{Implement easy-to-use, personalized web component with our applications dashboard, allow to easly access internal nokia applications.  Web component should be embeded by our applications in navbar and allow to fast open/switch application. There should be also centralized database with applications with some minimal interface allowing to register such applications.} 
+{SSL/TLS support in Facebook Presto big data drivers}
+{Extend Facebook Presto MongoDB and Cassandra drivers with SSL/TLS connectivity.} 
 {
-\begin{itemize}
-	\item Web component should allow to:
-		\begin{enumerate}
-			\item easy embed inside Our applications;
-			\item display tiles with most-used and/or most-important applications;
-			\item personalize displayed applications;
-		\end{enumerate}
-	\item Microservice should:
-		\begin{enumerate}
-			\item be secured source of data for web component;
-			\item should allow to register new applications with basic informations like icon, description, link etc.
-		\end{enumerate}
-\end{itemize}
+Presto is a distributed-query engine from Facebook that allows cross-querying different databases.
+
+Connection to particular database implementation is handled by Connectors. Presto connectors lack support for SSL connections to databases, that would allow for connections between Presto and databases via non-separated, even public network. At the moment such configuration requires setup of many SSH tunnels.
 }
-{-}
-{Dominik Markiewicz}
+{Java, basic knowledge of PKI/SSL mechanisms}
+{Mateusz Wronski, Michael Dec}
 {1 semester}
-{1-3}
+{1-2}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
