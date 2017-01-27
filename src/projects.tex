@@ -3,12 +3,11 @@
 {Tools portfolio}
 {Web application with tools presentation as tiles with some description.} 
 {
-Application should allow to manage several tools and present them in a nice layout.
-
+Application should allow management of several tools and present them in a nice layout.
+\bigbreak
 Proposal functionalities:
-
 \begin{enumerate}
-	\item Each tool represented as a tile - image, title, short description and url.
+	\item Each tool represented as a tile - image, title, short description and url
 	\item Tool details on modal (long description, repository etc.)
 	\item Filtering - simple filters based on tags
 	\item Add to favourites
@@ -29,7 +28,17 @@ Final scope of project will be set with the team.
 {Workshop environment}
 {Web application for creating programming workshops.} 
 {
-Application should allow workshop creation dedicated for any programming language. Required functionalities of application: splitting material into chapters, presenting step by step parts of code (with syntax highlighting), showing tasks for participants with timer.
+Main goal of application is to support programming workshops. Application should allow workshop creation dedicated for any programming language.
+\bigbreak
+Proposal functionalities:
+\begin{enumerate}
+	\item Working examples - code with explanations and working results.
+	\item Syntax highlighting.
+	\item Splitting material into chapters - in each chapter we extend code from the previous one (it is like building application in steps).
+	\item Showing tasks for participants with timer at the end of each timer.
+\end{enumerate}
+ 
+Final scope of project will be set with the team.
 }
 {Web technologies knowledge}
 {Ewa Kaczmarek}
@@ -41,7 +50,25 @@ Application should allow workshop creation dedicated for any programming languag
 {Retro Tool}
 {Web application for supporting Retrospective Meetings.}
 {
-Application should allow to manage several projects and create new posts in each of them and also show board with Working Agreements and Action Items.
+Retrospective Meeting is part of Scrum methodology. During this meeting, team reflects the past Sprint, discuss on improvements, identifies good practices. The result of the Retrospective is set of Working Agreements (set of rules/disciplines/processes the team agrees to follow) and Action Items (small task assigned to team member to be done before next Retrospective Meetings).
+\bigbreak
+Application should allow management of several projects and create new posts in each of them and also show board with Working Agreements and Action Items.
+\bigbreak
+Proposal functionalities:
+\begin{enumerate}
+	\item General view (only for admins):
+		\begin{enumerate}
+			\item Projects management - adding/editing/removing projects, assigning members to them
+			\item Users management - adding/editing/removing users
+		\end{enumerate}
+	\item Single project view (available only for assigned users):
+		\begin{enumerate}
+			\item Main dashboard with list of open Action Items and all Working Agreements set by the team
+			\item Board with availability of posts creation.
+			\item Post can have different category (new idea, code improvement etc.).
+			\item Adding comments to posts.
+		\end{enumerate}
+\end{enumerate}
 }
 {Nice to have basic JS knowledge}
 {Ewa Kaczmarek}
@@ -90,22 +117,22 @@ Minimal experience or eager to learn:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
 {Cross application notification system}
-{Implement micro service allowing to easy manage users notifications. Service should aggregate all notifications from applications and/or users. Provide also web component for simple embed and display notifications inside our applications.} 
+{Implement micro service able to easy management of users notifications. Service should aggregate all notifications from applications and/or users. Provide also web component for simple embedding and displaying notifications inside external applications.} 
 {
 \begin{enumerate}
-	\item Web component should allow to:
+	\item Web component should allow:
 		\begin{itemize}
-			\item easy embed inside our applications;
-			\item display aggregated notifications;
-			\item dismiss single/all notification;
-			\item show details and links;
+			\item easy embedding inside external applications;
+			\item displaying aggregated notifications;
+			\item dismissing single/all notification;
+			\item showing details and links;
 		\end{itemize}
 	\item Microservice should:
 		\begin{itemize}
 			\item be secured source of data for web component;
-			\item provide API for automatic notifications form applications;
+			\item provide API for automatic notifications from applications;
 			\item provide way to create manual notifications;
-			\item allow to scope notification message by type (info/warning/error), applications and user/user groups;
+			\item allow scope notification message by type (info/warning/error), applications and user/user groups;
 			\item create easy way to notify end user about not read messages;
 		\end{itemize}
 \end{enumerate}
@@ -117,20 +144,20 @@ Minimal experience or eager to learn:
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Web component for display personalized applications dashboard}
-{Implement easy-to-use, personalized web component with our applications dashboard, allow to easly access internal nokia applications.  Web component should be embeded by our applications in navbar and allow to fast open/switch application. There should be also centralized database with applications with some minimal interface allowing to register such applications.} 
+{Personalized applications dashboard}
+{Implement easy-to-use, personalized web component with applications dashboard, allowing for easily access internal Nokia applications. Web component should be embedded by internal applications in navbar and allow for fast open/switch application. There should be also centralized database with applications with some minimal interface allowing applications register.}
 {
 \begin{enumerate}
-	\item Web component should allow to:
+	\item Web component should allow:
 		\begin{itemize}
-			\item easy embed inside Our applications;
-			\item display tiles with most-used and/or most-important applications;
-			\item personalize displayed applications;
+			\item easy embedding inside external applications;
+			\item displaying tiles with most-used and/or most-important applications;
+			\item displaying personalized applications;
 		\end{itemize}
 	\item Microservice should:
 		\begin{itemize}
 			\item be secured source of data for web component;
-			\item should allow to register new applications with basic informations like icon, description, link etc.
+			\item provide new applications register mechanism with basic informations like icon, description, link etc.
 		\end{itemize}
 \end{enumerate}
 }
@@ -158,12 +185,12 @@ A program in any form that will accept inputs as i.e. renames, brand colors etc.
 {
 Application that has following components
 \begin{itemize}
-	\item Backend app
+	\item Backend app:
 		\begin{itemize}
 			\item monitors web services and generates and closes alarms when web applications are not responsive or has failing healthchecks
 			\item serves the mobile phone app
 		\end{itemize}
-	\item Android/mobile phone application
+	\item Android/mobile phone application:
 		\begin{itemize}
 			\item Allows for subscription to alarms from particular services
 			\item Receives and displays alarms and alarm cancellations
@@ -183,7 +210,7 @@ Extra: backend can be notified about application events (``App x is rebooting fo
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
 {SSL/TLS support in Facebook Presto big data drivers}
-{Extend Facebook Presto MongoDB and Cassandra drivers with SSL/TLS connectivity.} 
+{Extend Facebook Presto MongoDB and Cassandra drivers with SSL/TLS connectivity.}
 {
 Presto is a distributed-query engine from Facebook that allows cross-querying different databases.
 
