@@ -80,34 +80,29 @@ Proposal functionalities:
 {NERD - NEwcomer Request Delivery}
 {Develop a tool that will speed up / automate newcomer enablement process by adding new user to projects, sending mail requests or manuals, and creating Jira tickets via REST API.} 
 {
-Manager wants to give access rights to tools required to work with project for every member that joins development team (Jenkins, application server, Jira, confluence, GIT repository, etc). There also must be mail notifications to development team and product owner about new team member. Newcomer should get mail with set of instructions/manuals/requrements.
+Manager wants to give access rights to tools required to work with project for every member that joins development team (Jenkins, application server, Jira, confluence, GIT repository, etc). There also must be mail notification aimed to development team and product owner about new team member. Newcomer should get mail with set of instructions/manuals/requrements for quick start-up.
 \bigbreak
-There are two steps:
+There are two main use scenarios:
 \begin{itemize}
-	\item Project configuration in NERD Tool:
+	\item Project configuration in NERD Tool via web gui:
 		\begin{itemize}
-			\item Add email sending function:
+			\item Setup of messages to be sent on new team member arrival
 				\begin{itemize}
-					\item Configure target email and message/content. Mail message template can be edited with BBCode or Markdown.
+					\item Configuration of message/content. Mail message template can be edited with BBCode or Markdown.
+					\item Configuration of list of recepients 
 				\end{itemize}
+			\item Configuration of issues to be created on Jira service - target project, required fields etc
 		\end{itemize}
-	\item Add jira ticket creation function:
-		\begin{itemize}
-			\item Configure target Jira address/project id and ticket description
-			\item Send access rights request for given user:
-				\begin{itemize}
-					\item Choose previously configured project and attach user to it by his email address
-				\end{itemize}
-		\end{itemize}
+	\item New team member arrival - particular group of people can trigger actions configured in previous step for newcomer
 \end{itemize}
 }
 {
 Minimal experience or eager to learn:
 \begin{itemize}
-	\item Language for backend logic (i.e. Java + Play Framework)
-	\item Language for frontend logic (i.e. JavaScript + Angular2 or Java + Vaadin)
-	\item Data Base knowledge (i.e. Postgres + Ebean ORM or SQL)
-	\item REST web services
+	\item Some language for backend logic (i.e. Java + Play Framework)
+	\item Some language for frontend logic (i.e. JavaScript + Angular2 or Java + Vaadin)
+	\item Database knowledge
+	\item RESTful web services
 \end{itemize}
 }
 {Blazej Krystek}
@@ -168,15 +163,24 @@ Minimal experience or eager to learn:
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Website branding validator}
-{Sometimes the branding (i.e. name of company/product, logo or logotype) is changing. It would be useful to have a website crawler to walk the website and validate that all proper changes has been introduced.} 
+{Cross-applications shortcuts as a web component}
+{When many web services are operated and advertised by one entity (department, company, whatever) it is wise to have consistent way to easily move user bwetween applications. Good example are Google web apps or Microsoft web apps, where it's always obvious how to jump between services in given company portfolio - by using same looking shortcuts button in every application. The goal of the project is to have web-based service that would allow for creation, maangement and display of such common component for consistent linking to many web applicatiions/pages.} 
 {
-A program in any form that will accept inputs as i.e. renames, brand colors etc. and will crawl given website looking for errors in logotype or branding.
+Minimal finished project allows for:
+\begin{itemize}
+	\item Separate web application where one can 
+		\begin{itemize}
+			\item create new apps - with their icons and links
+			\item order or position of particlar application on applications list
+		\end{itemize}
+	\item Web component in any technology, that can be embedded in navbar of any application, and when clicked will display list of applications user can jump to with clickable links/anchors.
+\end{itemize}
+Possible extension: created app could monitor health of linked applications and disable/enable or modify view of the links displayed depending on the status of linked application (unresponsive, maintanance or similar).
 }
 {-}
 {Mateusz Wronski}
 {1 semester}
-{1-2}
+{4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
