@@ -112,27 +112,29 @@ Minimal experience or eager to learn:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
 {Cross application notification system}
-{Implement micro service able to easy management of users notifications. Service should aggregate all notifications from applications and/or users. Provide also web component for simple embedding and displaying notifications inside external applications.} 
+{Implement platform allowing for easy management and aggregation of users notifications. Service should collect notifications from multiple applications and/or users. Platform should distribute notifications to subscribed end users. Additionally, there should be embeddable web component capable to displaying all unread user notification.} 
 {
 \begin{enumerate}
-	\item Web component should allow:
+	\item Web component should allow for:
 		\begin{itemize}
-			\item easy embedding inside external applications;
-			\item displaying aggregated notifications;
-			\item dismissing single/all notification;
-			\item showing details and links;
+			\item easy embed inside external applications;
+			\item display aggregated notifications;
+			\item dismiss single/all notification;
+			\item show details and links;
+			\item manage subscribed notification sources and channels;
 		\end{itemize}
-	\item Microservice should:
+	\item Service should:
 		\begin{itemize}
 			\item be secured source of data for web component;
 			\item provide API for automatic notifications from applications;
 			\item provide way to create manual notifications;
-			\item allow scope notification message by type (info/warning/error), applications and user/user groups;
+			\item allow scope notification message by type (info/warning/error), applications, topic and user/user groups;
 			\item create easy way to notify end user about not read messages;
+			\item allow for scale up for high-traffic;
 		\end{itemize}
 \end{enumerate}
 }
-{Web technologies knowledge}
+{Any language; Base web technologies knowledge; Any DB system knowledge; Eager to learn new technologies}
 {Dominik Markiewicz}
 {1 semester}
 {2-6}
