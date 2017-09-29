@@ -1,79 +1,330 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Tools portfolio}
-{Web application with tools presentation as tiles with some description.} 
+{Projects Map}
+{Web Application that allows to create map of projects that are developed in given department/company. Projects should be described by: short description, technologies, list of developers etc. Each developer should  be described by list of technologies/frameworks that they know - that will allow to get help in given topic by others developers.} 
 {
-Application should allow management of several tools and present them in a nice layout.
-\bigbreak
-Proposal functionalities:
-\begin{enumerate}
-	\item Each tool represented as a tile - image, title, short description and url
-	\item Tool details on modal (long description, repository etc.)
-	\item Filtering - simple filters based on tags
-	\item Add to favourites
-	\item Notifications
-	\item Permissions - different views and details for different users
-	\item Admin panel - content management only for admins
-\end{enumerate}
-
-Final scope of project will be set with the team.
+Features:
+\begin{itemize}
+	\item Drawing map of office with projects/developers
+	\item Adding/editing projects/developers
+	\item Hierarchy view of department/company
+	\item Adding/editing department/company
+\end{itemize}
 }
-{Nice to have basic JS knowledge}
-{Ewa Kaczmarek}
+{Basic knowledge about Javascript}
+{Mateusz Wierzbicki}
 {1 semester}
-{4-6}
+{2-3}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Workshop environment}
-{Web application for creating programming workshops.} 
+{Nokia integration game}
+{Corporation version of "Time's up" game for mobile phones with centralized DB. One part of app is web application which allow to add custom characters to game. Second part is game for mobiles. Game ask backed for random set of characters and leading 4 rounds of game (description, one word, showing without speaking and pose) - like in original "Time's up" game.} 
 {
-Main goal of application is to support programming workshops. Application should allow workshop creation dedicated for any programming language.
+Web application:
+\begin{itemize}
+	\item List of collections
+	\item Managing user collections of characters (adding, editing, exporting, importing, tagging)
+	\item API for mobile app
+	\item Downloading random set of characters from chosen collection
+	\item Downloading random set of characters for specific characters tags (e.g. \#sport, \#fantasy)
+	\item Adding new tags to characters
+\end{itemize}
 \bigbreak
-Proposal functionalities:
-\begin{enumerate}
-	\item Working examples - code with explanations and working results.
-	\item Syntax highlighting.
-	\item Splitting material into chapters - in each chapter we extend code from the previous one (it is like building application in steps).
-	\item Showing tasks for participants with timer at the end of each timer.
-\end{enumerate}
- 
+Mobile application:
+\begin{itemize}
+	\item Downloading characters from webapp
+	\item Showing list of characters and possibility to reject/exchange a few of them
+	\item Gameplay (4 round, 2 teams) with counting down time, points and displaying rules of each round
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic of JavaScript,
+	\item Be open to learning mobile technologies like: Ionic, React Native, etc.
+\end{itemize}
+}
+{Kamil Mleczko}
+{1 semester}
+{2-3}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Developers dashboard}
+{
+Application allows creating dashboards with information about important things for developers like result of builds in CIs systems. Dashboard contains tiles with results and is customizable via web interface. Sources should be connectable via plugins. Plugin is a piece of code which contains fetching data, mapping fetched data to results and presenting result on tiles.  
+\bigbreak
+Target of the project is to run addtional computer which presents for all developers dashboard with project development status.
+}
+{
+Features:
+\begin{itemize}
+	\item Dashboard with tiles
+	\item Configuration of dashboard via web app
+	\item Sources connectable via plugins
+	\item Notification about events (mail, slack)
+	\item Static and dynamic tiles (for example develop branch and feature builds)
+\end{itemize}
+}
+{Basic knowledge about Javascript}
+{Mateusz Sikora}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Mailing groups browser}
+{Application subscribes to mailing group via email (like normal user) and aggregates recived mails to threads. Threads should be searchable and filterable in the frontend part of application.}
+{
+Features:
+\begin{itemize}
+	\item Mailing group client which parses mails, aggregates and persists them in DB
+	\item API for data
+	\item Client side for browsing, filtering, searching and possibility to contact with author of threads
+	\item Personalized settings for spam filters and searching
+\end{itemize}
+}
+{Basic knowledge about Javascript}
+{Mateusz Sikora}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Comparing graph databases}
+{Based on prepared dataset that describes relations between ancestors (family tree) you will have to present those relations in a tree form, store and transform them using graph databases:
+\begin{itemize}
+	\item OrientDB
+	\item HGraphDB
+\end{itemize}
+As a conclusion you should compare those two databases based on performance and convenience for that task.
+}
+{
+Following project includes::
+\begin{itemize}
+	\item Storing and presenting relation data in tree form in graph databases
+	\item Scripts that perform transformations on the data, such as:
+		\begin{itemize}
+			\item retrieve n-th ancestor/child based on relation column
+			\item filter children based on column value
+			\item get all elements with given ancestor
+		\end{itemize}
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic knowledge about databases
+	\item Basic knowledge about data structures
+	\item Willing to learn new technologies
+\end{itemize}
+}
+{Filip Płotnicki}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Comparing map-reduce methods}
+{
+Based on prepared dataset that describes relations between ancestors (family tree) you will have to present those relations in a tree form and store in MongoDB. Additionally you should be able to transform them using two methods:
+\begin{itemize}
+	\item default map-reduce mechanism in MongoDB
+	\item Spark connector for MongoDB
+\end{itemize}
+As a conclusion you should compare those two methods based on performance and convenience for that task.
+}
+{
+Following project includes::
+\begin{itemize}
+	\item Storing and presenting relation data in tree form in MongoDB
+	\item Transformations on the data using default map-reduce and Spark connector:
+		\begin{itemize}
+			\item retrieve n-th ancestor/child based on relation column
+			\item filter children based on column value
+			\item get all elements with given ancestor
+	\end{itemize}
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic knowledge about databases (MongoDB)
+	\item Basic knowledge about data structures
+	\item Willing to learn new technologies (Spark)
+\end{itemize}
+}
+{Krzysztof Grining}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Converter for table-based data to trees}
+{Based on prepared dataset that describes relations between ancestors (family tree) stored in a flat table you will have to prepare a "converter" that transforms the data in the flat table to a tree structure, which should be stored in Hbase. You should be able to perform transformations on the stored tree. You are free to choose or come up with a method for generating and storing the trees.}
+{
+Following project includes::
+\begin{itemize}
+	\item Converter script/application that converts flat table data into tree structured data
+	\item Script that performs transformations on the tree-structured data
+		\begin{itemize}
+			\item retrieve n-th ancestor/child based on relation column
+			\item filter children based on column value
+			\item get all elements with given ancestor
+		\end{itemize}
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic knowledge about distributed computing and databases
+	\item Basic knowledge about data structures
+	\item Willing to learn new technologies
+\end{itemize}
+}
+{Filip Płotnicki}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Web component with Tanks game}
+{The goal of project is to preare a React component, that can be included on webpage and after pressing a certain combination of keys it overlays the webpage and opens up a game based on "Tanks" (see: \url{https://pl.wikipedia.org/wiki/Battle_City}).}
+{
+Following project includes::
+\begin{itemize}
+	\item React component with playable game of Tanks
+	\item Basic gameplay features: driving the tank, shooting at the enemies, collisions, destructible terrain
+	\item Simple AI for enemies
+	\item Highscores
+\end{itemize}
+ You can add your own features and ideas in the game.
+}
+{
+\begin{itemize}
+	\item Basic knowledge about JavaScript
+	\item Basic knowledge about WebGL
+	\item Willing to learn new technologies
+\end{itemize}
+}
+{Andrzej Rozenfeld}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{APT plugin for Nexus}
+{The goal of this project is to prepare a plugin for Nexus repository application (\url{https://www.sonatype.com/nexus-repository-sonatype}) for managing APT repositories.}
+{
+Following project includes::
+\begin{itemize}
+	\item Plugin that adds functionalities to Nexus:
+		\begin{itemize}
+			\item creating/removing/modifying APT repositories
+			\item APT repository management through Web GUI
+		\end{itemize}
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic knowledge about Java
+	\item Basic knowledge about APT repositories
+	\item Willing to learn new technologies
+\end{itemize}
+}
+{Mateusz Stanuch}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Donation application}
+{
+Donation platfrom based on constant contact between both sides (receivers and donors). Users are able to support receivers with payments and they receive information about some progress etc. Donors use mobile application where they can see messages from receivers, list of payments and donate using external payments system like PayU. Receivers use web application for monitoring donations and sending messages to donors.
+ \bigbreak
+*Receivers are understood as some foundation, startup etc.
+} 
+{
+Web application:
+\begin{itemize}
+	\item List of payments
+	\item Sending messages to all or selected users
+\end{itemize}
+\bigbreak
+Mobile application:
+\begin{itemize}
+	\item Payments (test of services like dotpay, PayU, PayPal, etc.)
+	\item Receiving messages, notifications etc.
+\end{itemize}
 Final scope of project will be set with the team.
 }
-{Web technologies knowledge}
+{
+\begin{itemize}
+	\item Basic knowledge about Android
+	\item Basic knowledge about Web programming
+	\item Willing to learn new technologies
+\end{itemize}
+}
 {Ewa Kaczmarek}
 {1 semester}
 {3-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Retro Tool}
-{Web application for supporting Retrospective Meetings.}
+{Recruitment application}
+{Mobile application on Android to support job fairs with web application for management. Tablets are taken to job fairs where candidates can fill the form for selected job offers. All the applications are presented then in web application where recuiters can see the list of candidates and contact with them via mail. List of job offers can be changed between different job fairs. Some statistics should be provided to compare job fairs and job offers interest.}
 {
-Retrospective Meeting is part of Scrum methodology. During this meeting, team reflects the past Sprint, discuss on improvements, identifies good practices. The result of the Retrospective is set of Working Agreements (set of rules/disciplines/processes the team agrees to follow) and Action Items (small task assigned to team member to be done before next Retrospective Meetings).
+Web application:
+\begin{itemize}
+	\item List of job offerts
+	\item List of applications for selected job offers
+	\item Create new events
+	\item Create new job offerts for events
+	\item Statistics (how many candidates on specific event applied on selected job offer)
+	\item Sending mails to one or more cadidates
+\end{itemize}
 \bigbreak
-Application should allow management of several projects and create new posts in each of them and also show board with Working Agreements and Action Items.
-\bigbreak
-Proposal functionalities:
-\begin{enumerate}
-	\item General view (only for admins):
-		\begin{enumerate}
-			\item Projects management - adding/editing/removing projects, assigning members to them
-			\item Users management - adding/editing/removing users
-		\end{enumerate}
-	\item Single project view (available only for assigned users):
-		\begin{enumerate}
-			\item Main dashboard with list of open Action Items and all Working Agreements set by the team
-			\item Board with availability of posts creation.
-			\item Post can have different category (new idea, code improvement etc.).
-			\item Adding comments to posts.
-		\end{enumerate}
-\end{enumerate}
+Mobile application:
+\begin{itemize}
+	\item Present job offers
+	\item Simple form per job offer
+	\item Work in offline mode
+	\item Send forms when online
+\end{itemize}
+Final scope of project will be set with the team.
 }
-{Nice to have basic JS knowledge}
+{
+\begin{itemize}
+	\item Basic knowledge about Android
+	\item Basic knowledge about Web programming
+	\item Willing to learn new technologies
+\end{itemize}
+}
 {Ewa Kaczmarek}
 {1 semester}
-{4-5}
+{3-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{UI issue feedback}
+{A Chrome (web browser) extension or web application for finding and selecting those parts of web application (website) which are considered as ugly, bugged or defected.}
+{
+Following project includes: 
+\begin{itemize}
+	\item An extension or web application for giving feedback about unliked part of application with a visual preview (an image or live) of that part (or the entire page with those parts selected). 
+	\item A control panel(also web application) where those feedbacks are stored and managed. 
+\end{itemize}
+\bigbreak
+Developing applications by group of developers comes with troubles with making an agreement of visual aspects or functionality of an app. Writing e-mails and describing something using only text consume too much time and sometimes just doesn't work, specially if one feature has more than one author. Gathering feedbacks from many sources is also hard. 
+\bigbreak
+Project described above makes this whole process faster, easier and much cleaner, specially for someone who is responsible for fixing. 
+}
+{
+\begin{itemize}
+	\item Basic knowledge about any web programming language (and optionally creating Chrome extensions) and any database system.
+	\item Willing to learn new technologies
+\end{itemize}
+}
+{Maciej Bakowicz}
+{1 semester}
+{2-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
@@ -175,68 +426,3 @@ Possible extension: created app could monitor health of linked applications and 
 {1 semester}
 {4}
 \end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Mobile phone DevOps alarms delivery}
-{Develop a tool that will notify person via android app that some system or web application has crashed and/or behaves weirdly.} 
-{
-Application that has following components
-\begin{itemize}
-	\item Backend app:
-		\begin{itemize}
-			\item monitors web services and generates and closes alarms when web applications are not responsive or has failing healthchecks
-			\item serves the mobile phone app
-		\end{itemize}
-	\item Android/mobile phone application:
-		\begin{itemize}
-			\item Allows for subscription to alarms from particular services
-			\item Receives and displays alarms and alarm cancellations
-			\item Allows the technical stuff to ``claim`` the alarm (``I`m working on it`` notification)
-		\end{itemize}
-\end{itemize}
-\bigbreak
-Extra: application can be notified about events/alarms from Sensu system.
-
-Extra: backend can be notified about application events (``App x is rebooting for upgrade. Est downtime 30 minutes``)
-}
-{Any programming language, minimal frontend dev experience (frontend frameworks) or eager to learn Angular 2.}
-{Mateusz Wronski}
-{1 semester}
-{3-5}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{SSL/TLS support in Facebook Presto big data drivers}
-{Extend Facebook Presto MongoDB and Cassandra drivers with SSL/TLS connectivity.}
-{
-Presto is a distributed-query engine from Facebook that allows cross-querying different databases.
-
-Connection to particular database implementation is handled by Connectors. Presto connectors lack support for SSL connections to databases, that would allow for connections between Presto and databases via non-separated, even public network. At the moment such configuration requires setup of many SSH tunnels.
-}
-{Java, basic knowledge of PKI/SSL mechanisms}
-{Mateusz Wronski, Michael Dec}
-{1 semester}
-{1-2}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Dependency Licenses Generator}
-{Automate process of gathering and adding required licenses files.}
-{
-Generator, based on provided dependencies list(can be in form of maven, gradle, sbt), should gather all dependencies licenses files and prepare a file with all 3rd party dependencies.
-
-Project should have REST API and web based GUI.
-}
-{
-Minimal experience or eager to learn:
-\begin{itemize}
-	\item Some language for backend logic (i.e. Java + Dropwizard Framework)
-	\item Some language for frontend logic (i.e. JavaScript + Angular 2)
-	\item RESTful web services
-\end{itemize}
-}
-{Pawel Slawski}
-{1 semester}
-{2-3}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
