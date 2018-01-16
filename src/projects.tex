@@ -1,5 +1,108 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
+{Healthiness of data}
+{We have n data-points (time-series data) describing the telecom networks performance. We want to examine healthiness of data. For each category (performance area) and network (source) we want to calculate metrics like variance, coverage, outliers, periodicity etc.} 
+{
+Scope:
+\begin{itemize}
+	\item Processing provided data (reading the db dump, cleaning the data, building the data-representation, filtering etc.)
+	\item Calculating metrics (for given subset of data; done in near-real time)
+	\item Creating API for quering the data
+	\item Visualizing results
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Programming skills in any language
+	\item Skills/knowledge/willingness to learn about data science/data processing/data analysis
+\end{itemize}
+}
+{Mateusz Sikora, Sławomir Andrzejewski}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Finding click-events patterns}
+{We would like to find and analyse the user’s behavior of one of our apps. The main goal of the app is to collect, manage and share technical materials about Nokia products. Every material consist of set of different content-types (links, charts, presentations etc.) and is described by set of related metadata (creation and modification dates, related technology etc.). Users’ base for this app is ~couple of hundreds in every week, each user performs multiple actions.} 
+{
+Scope:
+\begin{itemize}
+	\item Reading, cleaning and processing provided data-set(s)
+		\begin{itemize}
+			\item Base of ‘click events’ (user, timestamp, event details with all related metadata)
+			\item Users’ attributes: organization, position/job title
+		\end{itemize}
+	\item Extracting info how the users use the app:
+		\begin{itemize}
+			\item How long spends in particular material
+			\item How many “types/classes” of users there are (and if it is somehow related to their department/job profile)
+			\item ... anything interesting, it is data mining after all
+		\end{itemize}
+	\item Exporting the findings in some friendly format (csv, excelc, etc) for further analysis/visualization
+	\item It should be possible to adapt the system for constant monitoring on the live app 
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Programming skills in any language (Python preferably)
+	\item Skills/knowledge/willingness to learn about data science/data processing/data analysis
+\end{itemize}
+}
+{Sławomir Andrzejewski}
+{1 semester}
+{2-3}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Steal the treasure Game}
+{Implement real-time game with partially random map generation. As a player your goal is to steal treasure from castle and remain unnoticed by guards. As a reference see “Thief” games series.} 
+{
+Scope:
+\begin{itemize}
+	\item Creation of map with some random elements
+	\item Hiding mechanism (obstacles / dark spots)
+	\item Guards movement algorithm
+	\item Alternative paths from entrance to treasury
+	\item Guard elimination system
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic Unity game engine knowledge (or equivalent)
+	\item Any programming language
+	\item Base algorithm knowledge
+\end{itemize}
+}
+{Przemysław Podstawa}
+{1 semester}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Fault handling system}
+{The goal of the project is to prepare a platform that will accept failure reports from one of the clients. The system should automatically parse new requests, allow them to be edited and send notifications of changes. It is also required to prepare reports and export them (CSV / Excel).} 
+{
+Scope:
+\begin{itemize}
+	\item Automatic data parsing (from email/file, single/multiple notification)
+	\item Adding/edit notification in UI
+	\item Report generation and export
+	\item Users management
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Web technologies knowledge (recommended framework JHipster but we are open for others)
+	\item Any DB system knowledge
+\end{itemize}
+}
+{Krzysztof Zieliński}
+{1 semester}
+{2-3}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
 {Simple Streaming Calculation Platform}
 {The goal is to create platform for streaming calculation using Apache Spark, Kafka, Cassandra, Docker in microservices architecture. This platform will allow to perform Big Data Calculation in Streaming mode.} 
 {
@@ -202,89 +305,6 @@ Following project includes::
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Web component with Tanks game}
-{The goal of project is to preare a React component, that can be included on webpage and after pressing a certain combination of keys it overlays the webpage and opens up a game based on "Tanks" (see: \url{https://pl.wikipedia.org/wiki/Battle_City}).}
-{
-Following project includes::
-\begin{itemize}
-	\item React component with playable game of Tanks
-	\item Basic gameplay features: driving the tank, shooting at the enemies, collisions, destructible terrain
-	\item Simple AI for enemies
-	\item Highscores
-\end{itemize}
- You can add your own features and ideas in the game.
-}
-{
-\begin{itemize}
-	\item Basic knowledge about JavaScript
-	\item Basic knowledge about WebGL
-	\item Willing to learn new technologies
-\end{itemize}
-}
-{Andrzej Rozenfeld}
-{1 semester}
-{2-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{APT plugin for Nexus}
-{The goal of this project is to prepare a plugin for Nexus repository application (\url{https://www.sonatype.com/nexus-repository-sonatype}) for managing APT repositories.}
-{
-Following project includes::
-\begin{itemize}
-	\item Plugin that adds functionalities to Nexus:
-		\begin{itemize}
-			\item creating/removing/modifying APT repositories
-			\item APT repository management through Web GUI
-		\end{itemize}
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Basic knowledge about Java
-	\item Basic knowledge about APT repositories
-	\item Willing to learn new technologies
-\end{itemize}
-}
-{Mateusz Stanuch}
-{1 semester}
-{2-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Donation application}
-{
-Donation platfrom based on constant contact between both sides (receivers and donors). Users are able to support receivers with payments and they receive information about some progress etc. Donors use mobile application where they can see messages from receivers, list of payments and donate using external payments system like PayU. Receivers use web application for monitoring donations and sending messages to donors.
- \bigbreak
-*Receivers are understood as some foundation, startup etc.
-} 
-{
-Web application:
-\begin{itemize}
-	\item List of payments
-	\item Sending messages to all or selected users
-\end{itemize}
-\bigbreak
-Mobile application:
-\begin{itemize}
-	\item Payments (test of services like dotpay, PayU, PayPal, etc.)
-	\item Receiving messages, notifications etc.
-\end{itemize}
-Final scope of project will be set with the team.
-}
-{
-\begin{itemize}
-	\item Basic knowledge about Android
-	\item Basic knowledge about Web programming
-	\item Willing to learn new technologies
-\end{itemize}
-}
-{Ewa Kaczmarek}
-{1 semester}
-{3-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
 {Recruitment application}
 {Mobile application on Android to support job fairs with web application for management. Tablets are taken to job fairs where candidates can fill the form for selected job offers. All the applications are presented then in web application where recuiters can see the list of candidates and contact with them via mail. List of job offers can be changed between different job fairs. Some statistics should be provided to compare job fairs and job offers interest.}
 {
@@ -342,40 +362,6 @@ Project described above makes this whole process faster, easier and much cleaner
 {Maciej Bakowicz}
 {1 semester}
 {2-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{NERD - NEwcomer Request Delivery}
-{Develop a tool that will speed up / automate newcomer enablement process by adding new user to projects, sending mail requests or manuals, and creating Jira tickets via REST API.} 
-{
-Manager wants to give access rights to tools required to work with project for every member that joins development team (Jenkins, application server, Jira, confluence, GIT repository, etc). There also must be mail notification aimed to development team and product owner about new team member. Newcomer should get mail with set of instructions/manuals/requrements for quick start-up.
-\bigbreak
-There are two main use scenarios:
-\begin{itemize}
-	\item Project configuration in NERD Tool via web gui:
-		\begin{itemize}
-			\item Setup of messages to be sent on new team member arrival
-				\begin{itemize}
-					\item Configuration of message/content. Mail message template can be edited with BBCode or Markdown.
-					\item Configuration of list of recepients 
-				\end{itemize}
-			\item Configuration of issues to be created on Jira service - target project, required fields etc
-		\end{itemize}
-	\item New team member arrival - particular group of people can trigger actions configured in previous step for newcomer
-\end{itemize}
-}
-{
-Minimal experience or eager to learn:
-\begin{itemize}
-	\item Some language for backend logic (i.e. Java + Play Framework)
-	\item Some language for frontend logic (i.e. JavaScript + Angular2 or Java + Vaadin)
-	\item Database knowledge
-	\item RESTful web services
-\end{itemize}
-}
-{Blazej Krystek}
-{1 semester}
-{3-5}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
