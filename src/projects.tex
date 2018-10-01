@@ -1,263 +1,156 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Reservation system for Nokia Garage}
-{Nokia Garage will be place where Nokia internal as well as external innovators can work on incubation and materialization of their ideas.
-The aim of the project is to develop system allowing quick and intuitive reservation of Garage Resources. Next to time booking system should allow selection of tools, products etc. that will be used e.g. 3D printer, IoT devices, soldering station etc. 
-System should have also working API that can be connected to 3rd party access control system.} 
-{
-Web application:
-\begin{itemize}
-	\item where one can book garage space for desired time
-		\begin{itemize}
-			\item depending on type of activities and used tools, space can be shared by more users
-			\item user can also mark if he/she is willing to share space with others
-			\item user can indicate other he is open for collaboration on certain idea
-		\end{itemize}
-	\item where one can explore all available Garage  resources e.g. 3D printers, IoT devices, soldering station etc.
-		\begin{itemize}
-			\item user can indicate which resources will be necessary
-			\item information is sent to administrator who will be ensure all requirements are met
-		\end{itemize}
-	\item which can be integrated with 3rd party access control system
-		\begin{itemize}
-			\item send to system information about bookings
-			\item get from the system information about 
-		\end{itemize}
-	\item where Garage admin can block access based on user credentials / email
-	\item where Garage admin can check Garage usage statistics
-		\begin{itemize}
-			\item occupancy tracking
-			\item resources utilization 
-		\end{itemize}
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Any programming language
-	\item Base web technologies knowledge
-	\item Any DB system knowledge
-	\item Eager to learn new technologies
-\end{itemize}
-}
-{Michał Stankiewicz}
-{1 semester}
-{3-5}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Healthiness of data}
-{We have nearly 100 millions data-points (time-series data) describing the telecom networks performance. We want to examine healthiness of data. For each category (performance area) and network (source) we want to calculate metrics like variance, coverage, outliers, periodicity etc.} 
+{Nokia library}
+{The goal of the project is to create a library web application.} 
 {
 Scope:
 \begin{itemize}
-	\item Processing provided data (reading the db dump, cleaning the data, building the data-representation, filtering etc.)
-	\item Calculating metrics (for given subset of data; done in near-real time)
-	\item Creating API for quering the data
-	\item Visualizing results
+	\item Reservation, booking and prolongation
+	\item Books management (add, edit, request new book etc.)
+	\item Semi automated book details completion
+	\item Data migration from existing library system
+	\item User authorization
 \end{itemize}
 }
 {
 \begin{itemize}
-	\item Programming skills in any language
-	\item Skills/knowledge/willingness to learn about data science/data processing/data analysis
+	\item Web technologies knowledge
+	\item Spring framework (or willingness to learn it)
 \end{itemize}
 }
-{Mateusz Sikora, Sławomir Andrzejewski}
-{1 semester}
-{2-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Finding click-events patterns}
-{We would like to find and analyse the user’s behavior of one of our apps. The main goal of the app is to collect, manage and share technical materials about Nokia products. Every material consist of set of different content-types (links, charts, presentations etc.) and is described by set of related metadata (creation and modification dates, related technology etc.). Users’ base for this app is ~couple of hundreds in every week, each user performs multiple actions.} 
-{
-Scope:
-\begin{itemize}
-	\item Reading, cleaning and processing provided data-set(s)
-		\begin{itemize}
-			\item Base of ‘click events’ (user, timestamp, event details with all related metadata)
-			\item Users’ attributes: organization, position/job title
-		\end{itemize}
-	\item Extracting info how the users use the app:
-		\begin{itemize}
-			\item How long spends in particular material
-			\item How many “types/classes” of users there are (and if it is somehow related to their department/job profile)
-			\item ... anything interesting, it is data mining after all
-		\end{itemize}
-	\item Exporting the findings in some friendly format (csv, excelc, etc) for further analysis/visualization
-	\item It should be possible to adapt the system for constant monitoring on the live app 
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Programming skills in any language (Python preferably)
-	\item Skills/knowledge/willingness to learn about data science/data processing/data analysis
-\end{itemize}
-}
-{Sławomir Andrzejewski}
-{1 semester}
-{2-3}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Steal the treasure Game}
-{Implement real-time game with partially random map generation. As a player your goal is to steal treasure from castle and remain unnoticed by guards. As a reference see “Thief” games series.} 
-{
-Scope:
-\begin{itemize}
-	\item Creation of map with some random elements
-	\item Hiding mechanism (obstacles / dark spots)
-	\item Guards movement algorithm
-	\item Alternative paths from entrance to treasury
-	\item Guard elimination system
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Basic Unity game engine knowledge (or equivalent)
-	\item Any programming language
-	\item Base algorithm knowledge
-\end{itemize}
-}
-{Przemysław Podstawa}
-{1 semester}
-{2-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Fault handling system}
-{The goal of the project is to prepare a platform that will accept failure reports from one of the clients. The system should automatically parse new requests, allow them to be edited and send notifications of changes. It is also required to prepare reports and export them (CSV / Excel).} 
-{
-Scope:
-\begin{itemize}
-	\item Automatic data parsing (from email/file, single/multiple notification)
-	\item Adding/edit notification in UI
-	\item Report generation and export
-	\item Users management
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Web technologies knowledge (recommended framework JHipster but we are open for others)
-	\item Any DB system knowledge
-\end{itemize}
-}
-{Krzysztof Zieliński}
-{1 semester}
-{2-3}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Simple Streaming Calculation Platform}
-{The goal is to create platform for streaming calculation using Apache Spark, Kafka, Cassandra, Docker in microservices architecture. This platform will allow to perform Big Data Calculation in Streaming mode.} 
-{
-Features:
-\begin{itemize}
-	\item Storing and presenting data in NoSQL Data Base ( i.e. Cassandra)
-	\item Implementation of streaming services using Apache Kafka
-	\item Deployment to Nokia Cloud with docker containers
-\end{itemize}
-}
-{Scala/Java as programming language. Willing to learn new technologies. Basic knowledge about databases. Basic Knowledge of REST API.}
-{Pawel Slawski, Dawid Rutowicz}
-{1 semester (even 1st iteration brings some value provided if it's done well)}
+{Mateusz Płuciennik}
 {3-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Projects Map}
-{Web Application that allows to create map of projects that are developed in given department/company. Projects should be described by: short description, technologies, list of developers etc. Each developer should  be described by list of technologies/frameworks that they know - that will allow to get help in given topic by others developers.} 
+{Pattern detector in sound signal}
+{Design and implement an application, that for given sound signal (from either a file or microphone input) will detect certain events happening on the recording. Program should expose simple web interface with events statistics in form of a dashboard. The program will be running on Raspberry PI device with microphone attached.} 
 {
-Features:
+Scope:
 \begin{itemize}
-	\item Drawing map of office with projects/developers
-	\item Adding/editing projects/developers
-	\item Hierarchy view of department/company
-	\item Adding/editing department/company
+	\item Reading audio input from microphone
+	\item Analyzing the signal for occurrence of certain sound events
+	\item Gathering basic statistics on a web-based dashboard
 \end{itemize}
 }
-{Basic knowledge about Javascript}
-{Mateusz Wierzbicki}
-{1 semester}
+{
+\begin{itemize}
+	\item Familiarity with Linux and Raspberry PI
+	\item Basic knowledge of signal analysis
+	\item At least one of programming languages: Python, Go, Ruby, C++
+	\item Base web technologies knowledge
+\end{itemize}
+}
+{Michał Pawlik, Wojciech Penar, Daniel Woźniak}
 {2-3}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Nokia integration game}
-{Corporation version of "Time's up" game for mobile phones with centralized DB. One part of app is web application which allow to add custom characters to game. Second part is game for mobiles. Game ask backed for random set of characters and leading 4 rounds of game (description, one word, showing without speaking and pose) - like in original "Time's up" game.} 
+{Code review notifications}
 {
-Web application:
-\begin{itemize}
-	\item List of collections
-	\item Managing user collections of characters (adding, editing, exporting, importing, tagging)
-	\item API for mobile app
-	\item Downloading random set of characters from chosen collection
-	\item Downloading random set of characters for specific characters tags (e.g. \#sport, \#fantasy)
-	\item Adding new tags to characters
-\end{itemize}
-\bigbreak
-Mobile application:
-\begin{itemize}
-	\item Downloading characters from webapp
-	\item Showing list of characters and possibility to reject/exchange a few of them
-	\item Gameplay (4 round, 2 teams) with counting down time, points and displaying rules of each round
-\end{itemize}
+A cross-browser compatible extension built using WebExtension API for code review notifications.
+
+Usually version control systems have poor built in system to handle notifications about what is happening in the review where user is participant or owner of it. Some already developed integrations do not meet the development team expectations or just does not exist. Receiving mails as notification is the same uncomfortable as our version control system sens a lot of mails everyday. At some point it is going to be considered as spam and turned off.
+} 
+{
+The goal is to create a light solution for a browser (which is opened almost all the time) with rich but not disturbing notification system and check-in list to keep those review requests organized and always have them around.
+
+The extension is intended to work with GitHub and GitLab git-repository platforms.
 }
 {
 \begin{itemize}
-	\item Basic of JavaScript,
-	\item Be open to learning mobile technologies like: Ionic, React Native, etc.
+	\item Basic knowledge about JavaScript, HTML, and CSS for being able to write browser extensions.
+	\item Willingness to learn.
 \end{itemize}
 }
-{Kamil Mleczko}
-{1 semester}
+{Maciej Bakowicz}
 {2-3}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Developers dashboard}
+{Augmented Reality game}
+{Implement Augmented reality Tower Defence game for Android system.}
 {
-Application allows creating dashboards with information about important things for developers like result of builds in CIs systems. Dashboard contains tiles with results and is customizable via web interface. Sources should be connectable via plugins. Plugin is a piece of code which contains fetching data, mapping fetched data to results and presenting result on tiles.  
-\bigbreak
-Target of the project is to run addtional computer which presents for all developers dashboard with project development status.
-}
-{
-Features:
+Scope:
 \begin{itemize}
-	\item Dashboard with tiles
-	\item Configuration of dashboard via web app
-	\item Sources connectable via plugins
-	\item Notification about events (mail, slack)
-	\item Static and dynamic tiles (for example develop branch and feature builds)
+	\item Create game map
+	\item Place map on flat surface
+	\item Gameplay elements
+	\item Units behavior
+	\item DB to save/load data (optional)
+	\item Multiplayer option ( player versus player or players vs AI ) (optional)
 \end{itemize}
 }
-{Basic knowledge about Javascript}
-{Mateusz Sikora}
-{1 semester}
-{2-4}
+{
+\begin{itemize}
+	\item Basic game engine knowledge - Unity engine, Unreal Engine or equivalent
+	\item Some graphics making expereience will be plus
+\end{itemize}
+}
+{Przemysław Podstawa}
+{3-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Mailing groups browser}
-{Application subscribes to mailing group via email (like normal user) and aggregates recived mails to threads. Threads should be searchable and filterable in the frontend part of application.}
+{Move up!}
+{Web and Android application for setting up collective cycling/running or other sport activities} 
 {
-Features:
+Scope:
 \begin{itemize}
-	\item Mailing group client which parses mails, aggregates and persists them in DB
-	\item API for data
-	\item Client side for browsing, filtering, searching and possibility to contact with author of threads
-	\item Personalized settings for spam filters and searching
+	\item Account creation
+	\item Posting announcements with work out details: when, how long, starting place, recurrence, advancement level etc.
+	\item Searching through existing announcements using specific filters and sending requests
+	\item Optional: creating a map with possibility to draw one’s route and publishing it
 \end{itemize}
 }
-{Basic knowledge about Javascript}
-{Mateusz Sikora}
-{1 semester}
+{
+\begin{itemize}
+	\item Basic programming knowledge
+\end{itemize}
+}
+{Mariola Kowalska}
+{
+\begin{itemize}
+	\item 1 – 3 for web application
+	\item 4 – 6 for web and Android application
+\end{itemize}
+}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Multiplayer Action race game}
+{
+Create a 2D multiplayer action game where players race through a platformer-style "city" map, trying to get on top of highest buildings and installing BTS-es/Antennas for their team. General rules/ideas:
+\begin{itemize}
+	\item A crossover between Icy Tower and Mirror's Edge 2D
+	\item Players try to climb up the highest points, but there are difficulties on the way that can cause them to fall down (see Getting Over It with Bennet Foddy)
+	\item Players can interrupt others / knock them down on the way
+	\item Possible game types: Race to the top, Capture the BTS, Install as many BTSes in a given time
+\end{itemize}
+}
+{
+Scope:
+\begin{itemize}
+	\item Multiplayer Game engine that allows players to move across a 2D side scroller map, interact with each others and complete objectives
+	\item Preferably the game should be runnable in browser
+	\item Optional: Map Editor
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic knowledge about game development
+	\item Basic knowledge about transfering data over network (TCP/UDP)
+	\item Familiarity with some game frameworks e.q. Phaser.js, Unity is very welcome
+\end{itemize}
+}
+{Michał Porzycki}
 {2-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
 {Comparing graph databases}
-{Based on prepared dataset that describes relations between ancestors (family tree) you will have to present those relations in a tree form, store and transform them using graph databases:
+{
+Based on prepared dataset that describes relations between ancestors (family tree) you will have to present those relations in a tree form, store and transform them using graph databases:
 \begin{itemize}
 	\item OrientDB
 	\item HGraphDB
@@ -265,7 +158,7 @@ Features:
 As a conclusion you should compare those two databases based on performance and convenience for that task.
 }
 {
-Following project includes::
+Following project includes:
 \begin{itemize}
 	\item Storing and presenting relation data in tree form in graph databases
 	\item Scripts that perform transformations on the data, such as:
@@ -284,193 +177,5 @@ Following project includes::
 \end{itemize}
 }
 {Filip Płotnicki}
-{1 semester}
 {2-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Comparing map-reduce methods}
-{
-Based on prepared dataset that describes relations between ancestors (family tree) you will have to present those relations in a tree form and store in MongoDB. Additionally you should be able to transform them using two methods:
-\begin{itemize}
-	\item default map-reduce mechanism in MongoDB
-	\item Spark connector for MongoDB
-\end{itemize}
-As a conclusion you should compare those two methods based on performance and convenience for that task.
-}
-{
-Following project includes::
-\begin{itemize}
-	\item Storing and presenting relation data in tree form in MongoDB
-	\item Transformations on the data using default map-reduce and Spark connector:
-		\begin{itemize}
-			\item retrieve n-th ancestor/child based on relation column
-			\item filter children based on column value
-			\item get all elements with given ancestor
-	\end{itemize}
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Basic knowledge about databases (MongoDB)
-	\item Basic knowledge about data structures
-	\item Willing to learn new technologies (Spark)
-\end{itemize}
-}
-{Krzysztof Grining}
-{1 semester}
-{2-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Converter for table-based data to trees}
-{Based on prepared dataset that describes relations between ancestors (family tree) stored in a flat table you will have to prepare a "converter" that transforms the data in the flat table to a tree structure, which should be stored in Hbase. You should be able to perform transformations on the stored tree. You are free to choose or come up with a method for generating and storing the trees.}
-{
-Following project includes::
-\begin{itemize}
-	\item Converter script/application that converts flat table data into tree structured data
-	\item Script that performs transformations on the tree-structured data
-		\begin{itemize}
-			\item retrieve n-th ancestor/child based on relation column
-			\item filter children based on column value
-			\item get all elements with given ancestor
-		\end{itemize}
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Basic knowledge about distributed computing and databases
-	\item Basic knowledge about data structures
-	\item Willing to learn new technologies
-\end{itemize}
-}
-{Filip Płotnicki}
-{1 semester}
-{2-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Recruitment application}
-{Mobile application on Android to support job fairs with web application for management. Tablets are taken to job fairs where candidates can fill the form for selected job offers. All the applications are presented then in web application where recuiters can see the list of candidates and contact with them via mail. List of job offers can be changed between different job fairs. Some statistics should be provided to compare job fairs and job offers interest.}
-{
-Web application:
-\begin{itemize}
-	\item List of job offerts
-	\item List of applications for selected job offers
-	\item Create new events
-	\item Create new job offerts for events
-	\item Statistics (how many candidates on specific event applied on selected job offer)
-	\item Sending mails to one or more cadidates
-\end{itemize}
-\bigbreak
-Mobile application:
-\begin{itemize}
-	\item Present job offers
-	\item Simple form per job offer
-	\item Work in offline mode
-	\item Send forms when online
-\end{itemize}
-Final scope of project will be set with the team.
-}
-{
-\begin{itemize}
-	\item Basic knowledge about Android
-	\item Basic knowledge about Web programming
-	\item Willing to learn new technologies
-\end{itemize}
-}
-{Ewa Kaczmarek}
-{1 semester}
-{3-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{UI issue feedback}
-{A Chrome (web browser) extension or web application for finding and selecting those parts of web application (website) which are considered as ugly, bugged or defected.}
-{
-Following project includes: 
-\begin{itemize}
-	\item An extension or web application for giving feedback about unliked part of application with a visual preview (an image or live) of that part (or the entire page with those parts selected). 
-	\item A control panel(also web application) where those feedbacks are stored and managed. 
-\end{itemize}
-\bigbreak
-Developing applications by group of developers comes with troubles with making an agreement of visual aspects or functionality of an app. Writing e-mails and describing something using only text consume too much time and sometimes just doesn't work, specially if one feature has more than one author. Gathering feedbacks from many sources is also hard. 
-\bigbreak
-Project described above makes this whole process faster, easier and much cleaner, specially for someone who is responsible for fixing. 
-}
-{
-\begin{itemize}
-	\item Basic knowledge about any web programming language (and optionally creating Chrome extensions) and any database system.
-	\item Willing to learn new technologies
-\end{itemize}
-}
-{Maciej Bakowicz}
-{1 semester}
-{2-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Cross application notification system}
-{Implement platform allowing for easy management and aggregation of users notifications. Service should collect notifications from multiple applications and/or users. Platform should distribute notifications to subscribed end users. Additionally, there should be embeddable web component capable to displaying all unread user notification.} 
-{
-\begin{enumerate}
-	\item Web component should allow for:
-		\begin{itemize}
-			\item easy embed inside external applications
-			\item display aggregated notifications
-			\item dismiss single/all notification
-			\item show details and links
-			\item manage subscribed notification sources and channels
-		\end{itemize}
-	\item Service should:
-		\begin{itemize}
-			\item be secured source of data for web component
-			\item provide API for automatic notifications from applications
-			\item provide way to create manual notifications
-			\item allow scope notification message by type (info/warning/error), applications, topic and user/user groups
-			\item create easy way to notify end user about not read messages
-			\item allow for scale up for high-traffic
-		\end{itemize}
-\end{enumerate}
-}
-{
-\begin{itemize}
-	\item Any programming language
-	\item Base web technologies knowledge
-	\item Any DB system knowledge
-	\item Eager to learn new technologies
-\end{itemize}
-}
-{Dominik Markiewicz}
-{1 semester}
-{2-6}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Cross-applications shortcuts as a web component}
-{When many web services are operated and advertised by one entity (department, company, whatever) it is wise to have consistent way to easily move user bwetween applications. Good example are Google web apps or Microsoft web apps, where it's always obvious how to jump between services in given company portfolio - by using same looking shortcuts button in every application. The goal of the project is to have web-based service that would allow for creation, maangement and display of such common component for consistent linking to many web applicatiions/pages.} 
-{
-Minimal finished project allows for:
-\begin{itemize}
-	\item Separate web application where one can 
-		\begin{itemize}
-			\item create new apps - with their icons and links
-			\item order or position of particlar application on applications list
-		\end{itemize}
-	\item Web component in any technology, that can be embedded in navbar of any application, and when clicked will display list of applications user can jump to with clickable links/anchors.
-\end{itemize}
-\bigbreak
-Possible extension: created app could monitor health of linked applications and disable/enable or modify view of the links displayed depending on the status of linked application (unresponsive, maintanance or similar).
-}
-{
-\begin{itemize}
-	\item Any programming language
-	\item Web technologies knowledge
-	\item Any DB system knowledge
-	\item Eager to learn new technologies
-\end{itemize}
-}
-{Mateusz Wronski, Dominik Markiewicz}
-{1 semester}
-{4}
 \end{project}

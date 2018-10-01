@@ -31,7 +31,7 @@
 \setlength{\headheight}{96pt} 
 \lhead{
 	\huge\color{nokiaBlue}\noindent\textbf{Innovative Projects}\\
-	\huge\color{Black} {Summer 2018}\\[0.5cm]
+	\huge\color{Black} {Winter 2018}\\[0.5cm]
 	\large contact: innovative.projects@nokia.com\\[0.4cm]
 	\hrule
 }
@@ -56,7 +56,7 @@
 \newcounter{projectCounter}
 \renewcommand{\arraystretch}{2}
 \newcolumntype{y}{>{\columncolor{nokiaGray}}l}
-\newenvironment{project}[7]{
+\newenvironment{project}[6]{
 	\stepcounter{projectCounter}
 	\addcontentsline{toc}{section}{#1}
 	\begin{center}
@@ -67,8 +67,7 @@
 		\textbf{Scope definition} & #3\\\hline
 		\textbf{Requirements} & #4\\\hline
 		\textbf{Author} & #5\\\hline
-		\textbf{Planned duration} & #6\\\hline
-		\textbf{Team size} & #7\\\hline
+		\textbf{Team size} & #6\\\hline
 	    \end{tabular}
 	\end{center}
 }
