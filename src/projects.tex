@@ -1,15 +1,276 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Nokia library}
-{The goal of the project is to create a library web application.} 
+{Inventory of supplies in Nokia Garage Makerspace}
+{Android + Web applications for inventory of tools and supplies in MakerSpace (part of Nokia Garage).}
 {
 Scope:
 \begin{itemize}
-	\item Reservation, booking and prolongation
-	\item Books management (add, edit, request new book etc.)
-	\item Semi automated book details completion
-	\item Data migration from existing library system
-	\item User authorization
+	\item Creating database system for makerspace inventory.
+	\item Creating web \& Android app for searching inventory.
+	\item Adding, editing and removing inventory items in database by web app.
+	\item Automatic generation of barcode/QRcode for all inventory items.
+	\item Searching inventory in database by text and by scanned barcode/QRcode.
+	\item Listing all inventory with custom filters.
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic knowledge about Web and Android development
+\end{itemize}
+}
+{Ewelina Stolarczyk}
+{3-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Employees Announcements}
+{Web application for managing internal employee announcements} 
+{
+Scope:
+\begin{itemize}
+	\item Sales management
+	\item Discussions stream
+	\item Found/lost/alert posts
+	\item Integration with current mailing system - send e-mail from web app in current stream with a specific template and then automatically post in a web app
+\end{itemize}
+}
+{
+Basic programming knowledge
+}
+{Mariola Kowalska}
+{4-6}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Squad Health Care App}
+{
+Health-check method, inspired by the Spotify, which our department has adopted to probe how teams are doing. Health-check is a clever way of measuring a team’s feelings: once a month, team members are asked to rate their satisfaction with certain areas, such as ‘Delivering value’ or ‘Teamwork’. The goal of this project is to simplify the whole process: collecting answers, reporting feedback to line manager, visualization of healthiness over time.
+}
+{
+Create Web Application (frontend, backend, database)
+\begin{itemize}
+	\item Login and registration (support for LDAP)
+	\item Roles/groups management
+	\item Health Check form
+	\item Visualization layer
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Interest in modern web development (JavaScript, React, Vue, Socket.IO)
+	\item Basic knowledge of DBMS
+	\item Docker
+\end{itemize}
+}
+{Mateusz Sołtysik, Alicja Bielska}
+{2-3}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Smart SMS}
+{
+Android application for parsing SMS and triggering defined actions.
+}
+{
+Message parsing rules:
+\begin{itemize}
+	\item specific sender(s)
+	\item message content (key words or regular expression)
+\end{itemize}
+Actions:
+\begin{itemize}
+	\item play sound
+	\item forward SMS
+	\item add additional notification
+	\item run another application
+\end{itemize}
+}
+{
+Java and/or Kotlin, support for Android 6.0 or higher
+}
+{Krzysztof Zieliński}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Competitive teams management application}
+{
+The goal of the project is to create a sports team management application. The application should have a friendly UI that allows users to create and modify teams and members, manage tournaments and visualize gathered results and statistics. Additionally the project can be extended to include more advanced statistics methods to predicate and calculate best teams match-ups and line-ups. Project is dedicated to students interested in learning web development. 
+}
+{
+Example features:
+\begin{itemize}
+	\item Define a team and add team members
+	\item Create team members roles and assign them
+	\item Register matches between teams with various statistics (duration, results, no. of sets/matches, score etc.)
+	\item Manage tournaments between many teams with various rulesets
+	\item Calculate and aggregate team statistics
+	\item Basing on collected data predicate best team setup and win probability against other teams
+	\item Top/trending team/player ranking basing on different criteria
+\end{itemize}
+}
+{
+JS + Backend technology (Python, NodeJS, GoLang etc.) + any DB
+}
+{Wojciech Adamek}
+{3-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{InnoPoint}
+{
+\begin{small}
+Application will be used to improve the organization process of Innovative Projects. It will improve the following aspects:
+\begin{itemize}
+	\item Call for topics – gathering project ideas before the new Innovative Projects edition
+	\item Project admissions – replacing the current decentralized, mail-based approach with a clean, transparent process
+	\item Project setup - through the integration of various APIs (Github, Trello, Slack)
+	\item Communication – on the mentor – team and mentor – academic contact layer (possibly by integrating the Google and/or Outlook Calendar)
+	\item Synchronization of all teams – for common events like presentation workshops and application demos
+	\item Project summary – optional grading and synchronization with the academic contact
+\end{itemize}
+\end{small}
+}
+{
+\begin{small}
+\begin{itemize}
+	\item Login/registration process (integration with GitHub oAuth would be nice to have)
+	\item Different roles: student, team leader, mentor, academic contact, moderator
+	\item Mentor should for example be able to:
+		\begin{itemize}
+			\item Submit project idea
+			\item Create a public profile
+			\item Assign himself to project
+			\item Create a repository for the project from application level (integration with GitHub API)
+		\end{itemize}
+	\item Moderator should for example be able to add projects, accept/reject project submissions and modify/remove teams
+	\item Student should for example be able to join a team, access project's view
+	\item Team leader should for example be able to invite students to a team, apply for projects
+	\item Academic contact for example should be able to assign to teams, request mentor feedback
+	\item Project’s view should contain project description, overview, important links
+	\item Mentor’s public profile should contain mentor's photo and biography
+	\item Team’s view should contain for example list of pending request to join the team, current team members
+	\item Nice to have global surverys, calendar (integration with Google Calendar/Outlook) and activity breakdown based on GitHub repository statistics
+\end{itemize}
+\end{small}
+}
+{
+\begin{small}
+\begin{itemize}
+	\item Basic knowledge of web development (JavaScript, HTML, CSS, nice to have: React or Vue.js)
+	\item Basic knowledge of database operations
+	\item Basic knowledge of some backend technology (preffered one of: Node.js, Java, Scala)
+	\item Optional: some experience with mobile development (Android)
+	\item Only for Computer Science students (requires some experience in programmin)
+\end{itemize}
+\end{small}
+}
+{Patryk Kowalcze}
+{4-6}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Video stream processing for an e-Health system}
+{
+\begin{small}
+Provide video stream processing functionalities, which enable touchless monitoring of the condition and behavior of individuals.
+ 
+Video monitoring is a part of a larger e-Health system where data streams from different types of sensors are processed and combined with data from other relevant sources (e.g. information about medical treatment).
+An important part of the video stream processing is anonymization functionality, which shall ensure privacy of the monitored individuals while keeping the information which is necessary to extract valuable insights via video analytics.
+\end{small}
+}
+{
+\begin{small}
+Main scope:
+\begin{itemize}
+	\item Capture video stream from a camera.
+	\item Transfer securely the video stream for a pre-processing by a video stream anonymizer.
+	\item Adding, editing and removing inventory items in database by web app.
+	\item Provide a video stream anonymization functionality. Use existing open source resources, like e.g. \url{https://github.com/facebookresearch/DensePose}, as far as feasible.
+	\item Transfer securely the anonymized video to the video analytics system.
+\end{itemize}
+In case you are willing to go some extra miles you have different options:
+\begin{itemize}
+	\item Consider basing the processing on WWS (\url{https://www.worldwidestreams.io/}) - a stream processing platform created by Nokia Bell Labs.
+	\item Add video analytics functionalities like:
+		\begin{itemize}
+			\item extraction of vital signs (e.g. pulse and respiration rates, body temperature). Use e.g. \url{https://github.com/Pwan101/pulsefromheadmotion};
+			\item sleep quality monitoring;
+			\item sleep quality monitoring;
+			\item mood identification;
+			\item behavior anomaly detection.
+		\end{itemize}
+	\item Synchronize the video stream with data streams from other monitoring sources, like wearables (e.g. \url{https://www.imec-int.com/en/chill}, \url{https://www.imec-int.com/en/circuitry-sensor-hubs/disposable-health-patch}) and environmental sensors (e.g. light intensity and noise levels).
+	\item Evaluate the potential benefits of Edge Cloud processing, e.g. using Airframe Open Edge Server \url{https://networks.nokia.com/products/airframe-open-edge-server}
+	\item Consider usability of blockchain in ensuring the data security.
+\end{itemize}
+
+Note that the project scope will be adjusted based on the team size and capabilities.
+\end{small}
+}
+{
+\begin{small}
+\begin{itemize}
+	\item can-do attitude :)
+	\item willingness to learn new technologies and tools
+	\item experience with programming in Python and C++
+	\item experience with Digital Signal Processing (especially video) will be an advantage, but is not mandatory
+\end{itemize}
+\end{small}
+}
+{Łukasz Skomra}
+{3-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{NB-IoT devices for an even Smarter City}
+{Create a prototype of an NB-IoT enabled device that tackles a need or a problem of citizens living in a city like Wrocław.
+Your prototype will be used as a part of an interactive NB-IoT technology demonstration in Nokia Garage.
+The final result can be far from an actual product, however it needs to work ;)
+} 
+{
+Main scope:
+\begin{itemize}
+	\item Look into Smart City use cases and choose a suitable candidate for an NB-IoT based solution. Some inspiration: \url{https://networks.nokia.com/industries/smart-city}, \url{https://www.gsma.com/iot/smart-cities/}
+	\item Design a first prototype of your device, based on one of available NB-IoT enabled development platforms (e.g. mangOH, PyCom, Arduino).
+	\item Make, make, make:
+		\begin{itemize}
+			\item o	Use the NB-IoT modem in combination with sensors and/or actuators and whatever else you need. Note that you can start with a WiFi connectivity and introduce an NB-IoT connectivity afterwards.
+			\item o	Iteratively improve your prototype.
+			\item o	Use Nokia IMPACT IoT platform (\url{https://networks.nokia.com/solutions/iot-platform}) for a hustle-free data collection.
+		\end{itemize}
+\end{itemize}
+
+In case you are willing to go some extra miles you have different options: 
+\begin{itemize}
+	\item Design and print a custom cover for your device on a 3D printer.
+	\item Visualize the data from multiple devices (real and simulated).
+	\item Add data analytics to make sense of the sensor data.
+	\item Why stop with a prototype? Build a Minimum Viable Product and make your city smarter.
+\end{itemize}
+Note that the project scope will be adjusted based on the team size and capabilities.
+}
+{
+\begin{itemize}
+	\item can-do attitude :)
+	\item willingness to learn new technologies and tools
+	\item experience with HW and embedded SW will be an advantage, but is not mandatory
+\end{itemize}
+}
+{Łukasz Skomra}
+{3-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Chatbot with Watson NLU / NLP}
+{
+The goal of the project is to create interface to available IBM Watson Assitance instance.
+}
+{
+Deliver chatbot with below aspects fullfilled:
+\begin{itemize}
+	\item Backend - create communication interface (API) to IBM Watson.
+	\item Frontend - create dedicated simple GUI with possibility for human interaction with bot.
 \end{itemize}
 }
 {
@@ -18,30 +279,85 @@ Scope:
 	\item Spring framework (or willingness to learn it)
 \end{itemize}
 }
-{Mateusz Płuciennik}
-{3-4}
+{Michał Pomykała}
+{2-3}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Pattern detector in sound signal}
-{Design and implement an application, that for given sound signal (from either a file or microphone input) will detect certain events happening on the recording. Program should expose simple web interface with events statistics in form of a dashboard. The program will be running on Raspberry PI device with microphone attached.} 
+{Test engine for SPA application frontend}
+{Project and implementation of a test engine for dynamic SPA web applications. This solution should be as generic and scalable as possible in order to be maintainable by a team of developers, as well as allow for adding new tests without substantial growth in complexity.} 
+{
+This solution should:
+\begin{itemize}
+	\item Implement unit tests and end-to-end tests of SPA web application frontend written in Vue.js
+	\item Ensure coverage for all components
+	\item Ensure scalability
+	\item Be as generic as possible
+	\item Be relatively easy to explain to developers who are new to the project
+	\item Be compatible with other JS technologies
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic knowledge of version control
+	\item Basic knowledge of Docker
+	\item Knowledge of modern javascript (ES6) and best practices
+	\item Knowledge of Vue.js framework
+	\item Knowledge of Cypress framework
+\end{itemize}
+}
+{Wojciech Trela, Marcin Cichański}
+{5}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Recognition of people using Maker Space in Nokia Garage}
+{The goal of the project is to create a prototype to recognize people who enter Maker Space in Nokia Garage.} 
 {
 Scope:
 \begin{itemize}
-	\item Reading audio input from microphone
-	\item Analyzing the signal for occurrence of certain sound events
-	\item Gathering basic statistics on a web-based dashboard
+	\item Recognition of people
+	\item Counting people
+	\item Face identification using ML algorithms (for example Tensorflow)
 \end{itemize}
 }
 {
 \begin{itemize}
-	\item Familiarity with Linux and Raspberry PI
-	\item Basic knowledge of signal analysis
-	\item At least one of programming languages: Python, Go, Ruby, C++
-	\item Base web technologies knowledge
+	\item Machine learning
+	\item Python/Java
+	\item Frontend and Backend technologies
 \end{itemize}
 }
-{Michał Pawlik, Wojciech Penar, Daniel Woźniak}
+{Tomasz Michałowski}
+{2-3}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Network Evolution Analysis}
+{Project is dedicated for students interested in data analysis. The main goal is to dive into our customer’s data and extract information about gains obtained by migration to new version of software. It requires to combine data about operator’s network configuration and its performance. Students have to face the three main fields which are essential in any Data Science projects:
+\begin{itemize}
+	\item Data Engineering
+	\item Data Analysis
+	\item Data Visualization
+\end{itemize}
+} 
+{
+Scope:
+\begin{itemize}
+	\item Dataset preprocessing \& validation
+	\item Detection of starting the migration process (based on network configuration data)
+	\item Estimation of gain obtained by software upgrade (based on network performance data)
+	\item Visualization of results
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item SQL
+	\item Python/R
+	\item Background in statistic is very welcome (especially time series analysis)
+\end{itemize}
+}
+{Ewa Boryczka}
 {2-3}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -68,53 +384,26 @@ The extension is intended to work with GitHub and GitLab git-repository platform
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Augmented Reality game}
-{Implement Augmented reality Tower Defence game for Android system.}
+{Interactive Graph Visualization Tool}
+{The goal of this project is to create a tool for interactive playing with graph-structured data. User should have a possibility to upload own dataset for further filtering, visualization and graph comparison. Possibility to export results and playground session sharing will be a useful extension.}
 {
 Scope:
 \begin{itemize}
-	\item Create game map
-	\item Place map on flat surface
-	\item Gameplay elements
-	\item Units behavior
-	\item DB to save/load data (optional)
-	\item Multiplayer option ( player versus player or players vs AI ) (optional)
+	\item Creating WebApp (frontend, backend, database)
+	\item Comparison of modern web visualization technologies (efficiency, scalability, memory usage)
+	\item Dataset management module (CRUD for uploading files)
+	\item Graph playground (interactive graph definition, comparison and results/session exporting)
 \end{itemize}
 }
 {
 \begin{itemize}
-	\item Basic game engine knowledge - Unity engine, Unreal Engine or equivalent
-	\item Some graphics making expereience will be plus
+	\item Interest in modern web development (JavaScript, React, Vue, Socket.IO)
+	\item Basic knowledge of DBMS
+	\item Docker
 \end{itemize}
 }
-{Przemysław Podstawa}
-{3-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Move up!}
-{Web and Android application for setting up collective cycling/running or other sport activities} 
-{
-Scope:
-\begin{itemize}
-	\item Account creation
-	\item Posting announcements with work out details: when, how long, starting place, recurrence, advancement level etc.
-	\item Searching through existing announcements using specific filters and sending requests
-	\item Optional: creating a map with possibility to draw one’s route and publishing it
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Basic programming knowledge
-\end{itemize}
-}
-{Mariola Kowalska}
-{
-\begin{itemize}
-	\item 1 – 3 for web application
-	\item 4 – 6 for web and Android application
-\end{itemize}
-}
+{Alicja Figas}
+{3-5}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
@@ -148,34 +437,26 @@ Scope:
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Comparing graph databases}
+{ML models management system}
 {
-Based on prepared dataset that describes relations between ancestors (family tree) you will have to present those relations in a tree form, store and transform them using graph databases:
-\begin{itemize}
-	\item OrientDB
-	\item HGraphDB
-\end{itemize}
-As a conclusion you should compare those two databases based on performance and convenience for that task.
+The goal of this project is to create a tool for Data Scientists teams to support Machine Learning models management. Data Scientists create a lot of various models with different parameters in their machine learning project. There is a need to build a system which gives clear overview of trained models.
 }
 {
-Following project includes:
 \begin{itemize}
-	\item Storing and presenting relation data in tree form in graph databases
-	\item Scripts that perform transformations on the data, such as:
-		\begin{itemize}
-			\item retrieve n-th ancestor/child based on relation column
-			\item filter children based on column value
-			\item get all elements with given ancestor
-		\end{itemize}
+	\item Create a service with UI and authentication enabling to view uploaded machine learning models with time of training, metadata, dataset info
+	\item Quality of models
+	\item Create a client for connecting with service
+	\item Notifications about changes in project
 \end{itemize}
 }
 {
 \begin{itemize}
-	\item Basic knowledge about databases
-	\item Basic knowledge about data structures
-	\item Willing to learn new technologies
+	\item Knowledge of Python and JavaScript (or other languages)
+	\item Basic knowledge of database management and file storage systems
+	\item Basic understanding of ETL/ML/CI processes
+	\item Interest in Web Applications development
 \end{itemize}
 }
-{Filip Płotnicki}
-{2-4}
+{Cezary Depta}
+{3-5}
 \end{project}
