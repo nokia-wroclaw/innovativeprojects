@@ -1,9 +1,191 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{eFEmetrics - timers and logging for frontend apps}
-{Solution for metrics and events reporting from any web application}
+{Multiplayer Action race game}
 {
-Scope:
+Create a 2D multiplayer action game where players race through a platformer-style "city" map, trying to get on top of highest buildings and installing BTS-es/Antennas for their team. General rules/ideas:
+\begin{itemize}
+	\item A crossover between Icy Tower and Mirror's Edge 2D
+	\item Players try to climb up the highest points, but there are difficulties on the way that can cause them to fall down (see Getting Over It with Bennet Foddy)
+	\item Players can interrupt others / knock them down on the way
+	\item Possible game types: Race to the top, Capture the BTS, Install as many BTSes in a given time
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Multiplayer Game engine that allows players to move across a 2D side scroller map, interact with each others and complete objectives
+	\item Preferably the game should be runnable in browser
+	\item Optional: Map Editor
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Basic knowledge about game development
+	\item Basic knowledge about transfering data over network (TCP/UDP)
+	\item Familiarity with some game frameworks e.q. Phaser.js, Unity is very welcome
+\end{itemize}
+}
+{Michał Porzycki}
+{2-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Training Planner}
+{The goal of the project is to create platform to complex managing webinars. Application will simplify the whole process: booking slots for trainings in calendar, sending notification to different group of people, creating invitations, adding materials and collecting statistics after the session.}
+{
+\begin{itemize}
+	\item Integration with calendar (e.g. Google Calendar)
+	\item Mail notifications
+	\item Creating templates of mail invitations
+	\item Collecting statistics after the webinar session
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Advanced frontend and medium backend knowledge and skills
+	\item Familiarity with React is very welcome
+	\item Only for Computer Science students (requires some experience in programming)
+\end{itemize}
+}
+{Renata Parzonka, Maciej Solarek}
+{3-4}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Django package to import and correlate data from external sources}
+{Information society relies on the processes of retrieving, storing and correlating data from various sources. These processes are part of everyday work of a developer in a technical company such as Nokia. Yet, the business component of this process is changing constantly, which requires continues changes to the code. The purpose of this package is to create an abstraction layer for business logic related to fetching data from various sources (API, CSV, Excel), storing it and creating relations between tables/data sources.}
+{
+Creating reusable Django app that:
+\begin{itemize}
+	\item Allows to manage (through config files or later API) data sources
+	\item Automatically create and maintain models
+	\item Let the user define relations between data sources
+	\item Provide API using Django Rest Framework
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Solid knowledge of Python
+	\item Basic knowledge of the Django framework
+\end{itemize}
+}
+{Borys Szefczyk}
+{2-3}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Photographer's portfolio}
+{Content Management System (CMS) crafted for a professional photographer. The application should have a UI that allows the user to add their own content, i.e. create galleries, custom pages, carousels, contact forms, links to other pages.}
+{
+Requirements:
+\begin{itemize}
+	\item The user should have a toolbox with components that can customized and freely be arranged on a page.
+	\item Responsive web design.
+	\item CMS should be packed in a container for portability and ease of deployment.
+	\item Audited using the Google Lighthouse tool for performance, accessibility, and SEO.
+\end{itemize}
+Other proposed features:
+\begin{itemize}
+	\item CMS should generate the final website as a set of static pages that can be hosted on a CDN or the website should be server-side rendered (SSR).
+	\item Page previews.
+	\item Built-in image resizing and compression.
+	\item Managing multilangual content.
+\end{itemize}
+}
+{
+Recommended stack:
+\begin{itemize}
+	\item React
+	\item Go or Python
+	\item Postgres or an embedded database
+\end{itemize}
+}
+{Michał Polański}
+{5}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Noticrawl - a web scraper and notifier}
+{An app that mimics user's behavior to crawl into webpage, extract desired content, and notify if it changes.
+A browser extension records what the user does on a page to get into desired content. Then it sends the instruction to a server that replays those steps in user-defined interval and notifies the user if there is a change.}
+{
+\begin{itemize}
+	\item The server application should use a headless browser so it is always up to date with ever-changing web standards.
+	\item Secure data upload from the web extension.
+	\item User-defined schedules.
+	\item The notfication should optionally provide a screenshot.
+	\item Should be able to manage multiple users.
+	\item Pluggable notification modules (e.g. mail, IRC, slack - depending on the size of the group)
+\end{itemize}
+}
+{
+Recommended stack:
+\begin{itemize}
+	\item Chromium Headless
+	\item WebExtension APIs
+	\item Python, Javascript, Go
+\end{itemize}
+}
+{Michał Polański}
+{4-5}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Check room}
+{
+The application allowing to obtain the status of the availability of rooms in the company after scanning the QR code on a mobile device.
+}
+{
+\begin{itemize}
+	\item A scanning application that allows you to connect to the room calendar
+	\item Connection to the e-mail client application for booking rooms
+	\item Customer interface showing the room availability screen
+	\item Display of available rooms nearby
+	\item Integration with Google Calendar
+\end{itemize}
+}
+{
+\begin{itemize}
+	\item Frontend knowledge (React)
+\end{itemize}
+}
+{Olga Bogucka}
+{2-3}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{Is my computer locked?}
+{The project consists of two simple applications in the server-client architecture. The client notifies the server in real-time whether the computer is locked or unlocked. The server provides a web-view of the current status with a button that blocks the computer.}
+{
+Requirements:
+\begin{itemize}
+	\item The application must be served through HTTPS on port 443 to be allowed by a corporate firewall.
+	\item The client must be properly authenticated by the server.
+	\item Gnome-shell integration and an alternative that just executes user-defined shell commands.
+	\item Simple registration that allows multiple clients to be connected simultaneously.
+	\item The registration can be disabled and client access rights can be set manually in a configuration file.
+\end{itemize}
+Extra points:
+\begin{itemize}
+	\item KDE integration.
+	\item The client can register custom actions that can be triggered by the server. This is defined in client's configuration file.
+	\item The server throttles the connection if the client seems rogue.
+\end{itemize}
+}
+{
+Recommended stack:
+\begin{itemize}
+	\item Go or Python
+	\item gRPC
+\end{itemize}
+}
+{Michał Polański}
+{2}
+\end{project}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{project}
+{eFEmetrics - timers and logging for frontend apps}
+{Solution for metrics and events reporting from any web application.}
+{
 \begin{itemize}
 	\item Backend to validate and accept the metrics and log messages
 	\item Database for storing them
@@ -19,97 +201,50 @@ Scope:
 	\item Devops with docker
 \end{itemize}
 }
-{Mateusz Wroński, Michał Polański}
-{3-4}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{Instant live polls}
-{Solution to gather ad-hoc feedback to any question from live audience}
-{
-Scope:
-\begin{itemize}
-	\item Responsive, minimalistic web application to create poll rooms, ideally active even when browser in mobile phone is minimized (with notifications of new polls)
-	\item Easy to join rooms via QR Code or short links
-	\item Effortless creation of poll questions from predefined set of types (yes/no), (yes/no/maybe) etc, but also multi-select with custom options
-	\item Anonymous answers, but only one answer from one terminal allowed
-	\item Live view of incoming answers and poll question results
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Full-stack web app in any frontend and backend framework of your choice
-	\item Containerization for effectiveness of build and deployment
-\end{itemize}
-}
 {Mateusz Wroński}
 {3-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{Sudoku Battle Royale}
-{Application that allows multiple players to compete against each other in solving traditional Sudoku boards. Application can be either web or mobile (or both) depending on technologies chosen. Project targeted towards students interested mainly in web development.}
+{Quick Forms}
+{The goal of this project is to create an application that allows for quick data entry into forms using a QR link. It will improve flexibility and reduce time in any kind of office.}
 {
-Scope:
 \begin{itemize}
-	\item Automatic matchmaking between players
-	\item Automatic generation/solving of boards
-	\item Live gameplay updates and interactions between all players
-	\item Recording score and statistics of games
+	\item Backend to validate input data.
+	\item Database to store input data.
+	\item API to serve input data in standarized form.
+	\item RWD Frontend interface (should work on mobile devices).
 \end{itemize}
 }
 {
 \begin{itemize}
-	\item React + React Native for mobile support
-	\item Any backend language (for example NodeJS, Python, Go)
+	\item Frontend knowledge (React)
+	\item Python/NodeJS
+	\item RestAPI
 \end{itemize}
 }
-{Wojciech Adamek}
-{3-5}
+{Tomasz Michałowski}
+{3}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{project}
-{togEATher}
-{Application that allows strangers that live close-by to order food together from the same restaurant to save money on deliveries costs. Project should be realized as a web application. Targeted towards students interested in web development.}
+{Car Android Bluetooth controller}
+{The goal of the project is to create a Bluetooth Android controller like those used in modern cars. It is required to setup HW and SWs project which will give the possibility to control Android applications via dedicated controller, via Bluetooth interface. Such solution should give the possibility e.g. to send the SMS , open media, manage contacts without using mobile phone screen.}
 {
-Scope:
 \begin{itemize}
-	\item User authorization (custom or for example oAuth integration with Google and Facebook)
-	\item Creation of a "lobby" by one user who sets from which restaurant he would like to order from and when
-	\item Allow other users to join a lobby of their choice and choose what they would like to order
-	\item Users should be able to donate money to their account funds which then is used to pay for orders
-	\item When the time of order approaches, the delivery cost should be split among participants, the funds taken from their account and the order placed automatically
-	\item Tracking status of deliveries
+	\item Prepare dedicated SW ”signaling broker” to manage signals translation between controller and Android apps.
+	\item Setup HW Bluetooth interface to communicate with dedicated “signaling broker”.
+	\item Give the possibility to control Android Phone via Bluetooth and dedicated controller.
 \end{itemize}
 }
 {
 \begin{itemize}
-	\item Frontend: React or any other JS framework
-	\item Any backend language (for example NodeJS, Python, Go)
+	\item Knowledge about Mobile Phone systems – Android
+	\item Knowledge about Bluetooth communications aspects for Mobile Phones
+	\item Possibility to setup simple HW with SW to manage communications between external device and Android system
 \end{itemize}
 }
-{Wojciech Adamek}
-{4-5}
-\end{project}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{project}
-{3S (Security Scan Scheduler)}
-{The application allowing to plan security scans of selected tools (according to planned schedule) and sending the reports to adequate mailbox.}
-{
-Scope:
-\begin{itemize}
-	\item As scanning engine - Anchore Engine (providing information about current updates and possibility to update to the latest version is required)
-	\item Support of multiple amount of repositories (configuration etc.)
-	\item Possibility to search all repositories according to assumed template eg. searching all pictures of tool XYZ and selecting them to scan
-	\item Automatic scan of the latest version of tool
-\end{itemize}
-}
-{
-\begin{itemize}
-	\item Java Spring, Docker
-\end{itemize}
-}
-{Krzysztof Zieliński}
-{2-3}
+{Michał Pomykała}
+{3-4}
 \end{project}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
